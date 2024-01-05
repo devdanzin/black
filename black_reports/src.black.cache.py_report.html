@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>wily report</title>
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+</head>
+<body class="indexfile">
+    <div class="limiter">
+		<div class="container-table100">
+			<div class="wrap-table100">
+                <table class="index">
+                    <thead>
+                        <tr><th>Revision</th><th>Message</th><th>Author</th><th>Date</th><th>Number of Operands</th><th>Number of Operators</th><th>blank lines</th><th>Multi-line comments</th><th>Cyclomatic Complexity</th><th>Difficulty</th><th>Effort</th><th>Unique Operands</th><th>Unique Operators</th><th>Length of application</th><th>L Lines of Code</th><th>Lines of Code</th><th>Maintainability Index</th><th>Multi lines</th><th>Single comment lines</th><th>S Lines of Code</th><th>Unique vocabulary (h1 + h2)</th><th>Code volume</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>bf6cabc</td><td>Do not round cache mtimes (#4128)
+
+Fixes #4116
+
+</td><td>Shantanu</td><td>2023-12-28</td><td>3 (0)</td><td>6 (0)</td><td>29 (0)</td><td>3 (0)</td><td>25 (0)</td><td>1 (0.0)</td><td>27 (0.0)</td><td>2 (0)</td><td>6 (0)</td><td>9 (0)</td><td>105 (0)</td><td>143 (0)</td><td>62.6336 (<span class='green-color'>+0.0563582</span>)</td><td>15 (0)</td><td>8 (0)</td><td>91 (0)</td><td>8 (0)</td><td>27 (0.0)</td></tr><tr><td>b7717c3</td><td>Standardise newlines after module-level docstrings</td><td>Daniël van Noord</td><td>2023-10-09</td><td>3 (0)</td><td>6 (0)</td><td>29 (<span class='orange-color'>+1</span>)</td><td>3 (0)</td><td>25 (0)</td><td>1 (0.0)</td><td>27 (0.0)</td><td>2 (0)</td><td>6 (0)</td><td>9 (0)</td><td>105 (0)</td><td>143 (<span class='orange-color'>+1</span>)</td><td>62.5772 (0.0)</td><td>15 (0)</td><td>8 (0)</td><td>91 (0)</td><td>8 (0)</td><td>27 (0.0)</td></tr><tr><td>5d5bf6e</td><td>Fix cache versioning when BLACK_CACHE_DIR is set (</td><td>Shantanu</td><td>2023-10-09</td><td>3 (<span class='red-color'>+1</span>)</td><td>6 (<span class='red-color'>+2</span>)</td><td>28 (0)</td><td>3 (0)</td><td>25 (0)</td><td>1 (0.0)</td><td>27 (<span class='red-color'>+11.4902</span>)</td><td>2 (0)</td><td>6 (<span class='red-color'>+2</span>)</td><td>9 (<span class='red-color'>+3</span>)</td><td>105 (<span class='red-color'>+1</span>)</td><td>142 (<span class='orange-color'>+1</span>)</td><td>62.5772 (<span class='red-color'>-0.722714</span>)</td><td>15 (0)</td><td>8 (0)</td><td>91 (<span class='red-color'>+1</span>)</td><td>8 (<span class='red-color'>+2</span>)</td><td>27 (<span class='red-color'>+11.4902</span>)</td></tr><tr><td>751583a</td><td>Pickle raw tuples in FileData cache (#3877)
+
+Co-au</td><td>Jelle Zijlstra</td><td>2023-09-10</td><td>2 (0)</td><td>4 (0)</td><td>28 (0)</td><td>3 (<span class='green-color'>+2</span>)</td><td>25 (<span class='red-color'>+3</span>)</td><td>1 (0.0)</td><td>15.5098 (0.0)</td><td>2 (0)</td><td>4 (0)</td><td>6 (0)</td><td>104 (<span class='red-color'>+4</span>)</td><td>141 (<span class='orange-color'>+6</span>)</td><td>63.2999 (<span class='red-color'>-0.0501623</span>)</td><td>15 (0)</td><td>8 (<span class='orange-color'>+2</span>)</td><td>90 (<span class='red-color'>+4</span>)</td><td>6 (0)</td><td>15.5098 (0.0)</td></tr><tr><td>c6a031e</td><td>Improve caching by comparing file hashes as fallba</td><td>Marc Mueller</td><td>2023-08-18</td><td>2 (<span class='green-color'>-1</span>)</td><td>4 (<span class='green-color'>-1</span>)</td><td>28 (<span class='orange-color'>+4</span>)</td><td>1 (<span class='red-color'>-1</span>)</td><td>22 (<span class='red-color'>+10</span>)</td><td>1 (<span class='green-color'>-0.5</span>)</td><td>15.5098 (<span class='green-color'>-20.4902</span>)</td><td>2 (<span class='green-color'>-1</span>)</td><td>4 (<span class='green-color'>-1</span>)</td><td>6 (<span class='green-color'>-2</span>)</td><td>100 (<span class='red-color'>+41</span>)</td><td>135 (<span class='orange-color'>+38</span>)</td><td>63.3501 (<span class='red-color'>-13.8334</span>)</td><td>15 (<span class='orange-color'>+1</span>)</td><td>6 (<span class='orange-color'>+1</span>)</td><td>86 (<span class='red-color'>+32</span>)</td><td>6 (<span class='green-color'>-2</span>)</td><td>15.5098 (<span class='green-color'>-8.49022</span>)</td></tr><tr><td>411ed77</td><td>Bump pre-commit hooks (#3191)
+
+</td><td>Richard Si</td><td>2022-07-27</td><td>3 (0)</td><td>5 (0)</td><td>24 (<span class='orange-color'>-2</span>)</td><td>2 (0)</td><td>12 (0)</td><td>1.5 (0.0)</td><td>36 (0.0)</td><td>3 (0)</td><td>5 (0)</td><td>8 (0)</td><td>59 (0)</td><td>97 (<span class='orange-color'>-2</span>)</td><td>77.1834 (0.0)</td><td>14 (0)</td><td>5 (0)</td><td>54 (0)</td><td>8 (0)</td><td>24 (0.0)</td></tr><tr><td>e0a780a</td><td>Add isort to linting toolchain
+
+Co-authored-by: Sh</td><td>Richard Si</td><td>2022-07-27</td><td>3 (0)</td><td>5 (0)</td><td>26 (<span class='orange-color'>+2</span>)</td><td>2 (0)</td><td>12 (0)</td><td>1.5 (0.0)</td><td>36 (0.0)</td><td>3 (0)</td><td>5 (0)</td><td>8 (0)</td><td>59 (0)</td><td>99 (<span class='orange-color'>+2</span>)</td><td>77.1834 (0.0)</td><td>14 (0)</td><td>5 (0)</td><td>54 (0)</td><td>8 (0)</td><td>24 (0.0)</td></tr><tr><td>44d5da0</td><td>Reformat codebase with isort
+</td><td>Richard Si</td><td>2022-07-27</td><td>3 (0)</td><td>5 (0)</td><td>24 (<span class='orange-color'>-2</span>)</td><td>2 (0)</td><td>12 (0)</td><td>1.5 (0.0)</td><td>36 (0.0)</td><td>3 (0)</td><td>5 (0)</td><td>8 (0)</td><td>59 (0)</td><td>97 (<span class='orange-color'>-2</span>)</td><td>77.1834 (0.0)</td><td>14 (0)</td><td>5 (0)</td><td>54 (0)</td><td>8 (0)</td><td>24 (0.0)</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

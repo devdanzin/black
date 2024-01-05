@@ -1,0 +1,317 @@
+pre { line-height: 125%; }
+td.linenos .normal { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
+span.linenos { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
+td.linenos .special { color: #000000; background-color: #ffffc0; padding-left: 5px; padding-right: 5px; }
+span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 5px; padding-right: 5px; }
+.hll { background-color: #ffffcc }
+.c { color: #3D7B7B; font-style: italic } /* Comment */
+.err { border: 1px solid #FF0000 } /* Error */
+.k { color: #008000; font-weight: bold } /* Keyword */
+.o { color: #666666 } /* Operator */
+.ch { color: #3D7B7B; font-style: italic } /* Comment.Hashbang */
+.cm { color: #3D7B7B; font-style: italic } /* Comment.Multiline */
+.cp { color: #9C6500 } /* Comment.Preproc */
+.cpf { color: #3D7B7B; font-style: italic } /* Comment.PreprocFile */
+.c1 { color: #3D7B7B; font-style: italic } /* Comment.Single */
+.cs { color: #3D7B7B; font-style: italic } /* Comment.Special */
+.gd { color: #A00000 } /* Generic.Deleted */
+.ge { font-style: italic } /* Generic.Emph */
+.gr { color: #E40000 } /* Generic.Error */
+.gh { color: #000080; font-weight: bold } /* Generic.Heading */
+.gi { color: #008400 } /* Generic.Inserted */
+.go { color: #717171 } /* Generic.Output */
+.gp { color: #000080; font-weight: bold } /* Generic.Prompt */
+.gs { font-weight: bold } /* Generic.Strong */
+.gu { color: #800080; font-weight: bold } /* Generic.Subheading */
+.gt { color: #0044DD } /* Generic.Traceback */
+.kc { color: #008000; font-weight: bold } /* Keyword.Constant */
+.kd { color: #008000; font-weight: bold } /* Keyword.Declaration */
+.kn { color: #008000; font-weight: bold } /* Keyword.Namespace */
+.kp { color: #008000 } /* Keyword.Pseudo */
+.kr { color: #008000; font-weight: bold } /* Keyword.Reserved */
+.kt { color: #B00040 } /* Keyword.Type */
+.m { color: #666666 } /* Literal.Number */
+.s { color: #BA2121 } /* Literal.String */
+.na { color: #687822 } /* Name.Attribute */
+.nb { color: #008000 } /* Name.Builtin */
+.nc { color: #0000FF; font-weight: bold } /* Name.Class */
+.no { color: #880000 } /* Name.Constant */
+.nd { color: #AA22FF } /* Name.Decorator */
+.ni { color: #717171; font-weight: bold } /* Name.Entity */
+.ne { color: #CB3F38; font-weight: bold } /* Name.Exception */
+.nf { color: #0000FF } /* Name.Function */
+.nl { color: #767600 } /* Name.Label */
+.nn { color: #0000FF; font-weight: bold } /* Name.Namespace */
+.nt { color: #008000; font-weight: bold } /* Name.Tag */
+.nv { color: #19177C } /* Name.Variable */
+.ow { color: #AA22FF; font-weight: bold } /* Operator.Word */
+.w { color: #bbbbbb } /* Text.Whitespace */
+.mb { color: #666666 } /* Literal.Number.Bin */
+.mf { color: #666666 } /* Literal.Number.Float */
+.mh { color: #666666 } /* Literal.Number.Hex */
+.mi { color: #666666 } /* Literal.Number.Integer */
+.mo { color: #666666 } /* Literal.Number.Oct */
+.sa { color: #BA2121 } /* Literal.String.Affix */
+.sb { color: #BA2121 } /* Literal.String.Backtick */
+.sc { color: #BA2121 } /* Literal.String.Char */
+.dl { color: #BA2121 } /* Literal.String.Delimiter */
+.sd { color: #BA2121; font-style: italic } /* Literal.String.Doc */
+.s2 { color: #BA2121 } /* Literal.String.Double */
+.se { color: #AA5D1F; font-weight: bold } /* Literal.String.Escape */
+.sh { color: #BA2121 } /* Literal.String.Heredoc */
+.si { color: #A45A77; font-weight: bold } /* Literal.String.Interpol */
+.sx { color: #008000 } /* Literal.String.Other */
+.sr { color: #A45A77 } /* Literal.String.Regex */
+.s1 { color: #BA2121 } /* Literal.String.Single */
+.ss { color: #19177C } /* Literal.String.Symbol */
+.bp { color: #008000 } /* Name.Builtin.Pseudo */
+.fm { color: #0000FF } /* Name.Function.Magic */
+.vc { color: #19177C } /* Name.Variable.Class */
+.vg { color: #19177C } /* Name.Variable.Global */
+.vi { color: #19177C } /* Name.Variable.Instance */
+.vm { color: #19177C } /* Name.Variable.Magic */
+.il { color: #666666 } /* Literal.Number.Integer.Long */
+
+.locnone, .llocnone, .slocnone, .commentsnone, .multinone, .blanknone, .single_commentsnone, .h1none, .h2none, .N1none, .N2none, .vocabularynone, .lengthnone, .volumenone, .effortnone, .difficultynone, .cc_functionnone { background-color: #ffffff;}
+.cc_function14, .volume131 { background-color: rgba(133, 255, 0, 0.75);}
+.h17, .h27, .N27, .length13, .difficulty7, .N17, .vocabulary13, .effort300, .volume76 { background-color: rgba(76, 255, 0, 0.75);}
+.h218, .N218, .length35, .N118, .vocabulary35 { background-color: rgba(217, 255, 0, 0.75);}
+.N112, .length23, .N212, .vocabulary23, .h212, .h112 { background-color: rgba(140, 255, 0, 0.75);}
+.N220, .length39, .vocabulary39, .N120, .h220 { background-color: rgba(242, 255, 0, 0.75);}
+.vocabulary25, .h213, .N113, .cc_function16, .N213 { background-color: rgba(153, 255, 0, 0.75);}
+.length32, .vocabulary32 { background-color: rgba(198, 255, 0, 0.75);}
+.volume148 { background-color: rgba(150, 255, 0, 0.75);}
+.effort577, .length24, .vocabulary24 { background-color: rgba(147, 255, 0, 0.75);}
+.difficulty3, .h13, .N13, .h23, .vocabulary5, .effort101, .effort103, .N23, .length5, .effort102 { background-color: rgba(26, 255, 0, 0.75);}
+.cc_function6, .length9, .vocabulary9, .h25, .N25, .h15, .N15, .difficulty5, .volume51 { background-color: rgba(51, 255, 0, 0.75);}
+.h28, .N28, .N18, .h18, .length15, .vocabulary15, .effort350, .difficulty8, .volume88 { background-color: rgba(89, 255, 0, 0.75);}
+.N14, .h24, .N24, .h14, .volume38, .vocabulary7, .difficulty4, .length7 { background-color: rgba(38, 255, 0, 0.75);}
+.vocabulary11, .h26, .N26, .length11, .N16, .h16, .difficulty6, .volume64 { background-color: rgba(64, 255, 0, 0.75);}
+.length12, .vocabulary12, .volume70 { background-color: rgba(70, 255, 0, 0.75);}
+.volume41, .cc_function5 { background-color: rgba(41, 255, 0, 0.75);}
+.effort62 { background-color: rgba(16, 255, 0, 0.75);}
+.difficulty1, .h11, .N11, .effort2, .difficulty0, .h10, .h20, .N10, .N20, .vocabulary0, .length0, .volume0, .effort0, .cc_function1, .h21, .N21, .effort1 { background-color: rgba(0, 255, 0, 0.75);}
+.cc_function2, .effort42, .volume11, .effort41 { background-color: rgba(10, 255, 0, 0.75);}
+.h12, .N12, .h22, .N22, .vocabulary3, .length3, .difficulty2, .effort52 { background-color: rgba(13, 255, 0, 0.75);}
+.vocabulary8, .length8, .effort177 { background-color: rgba(45, 255, 0, 0.75);}
+.volume27, .effort106, .effort105 { background-color: rgba(27, 255, 0, 0.75);}
+.effort27, .volume8, .effort30, .effort29 { background-color: rgba(7, 255, 0, 0.75);}
+.vocabulary6, .length6 { background-color: rgba(32, 255, 0, 0.75);}
+.volume15, .effort55, .effort56 { background-color: rgba(14, 255, 0, 0.75);}
+.effort15, .effort16, .effort18 { background-color: rgba(4, 255, 0, 0.75);}
+.volume4, .effort11 { background-color: rgba(3, 255, 0, 0.75);}
+.cc_function3, .effort81 { background-color: rgba(20, 255, 0, 0.75);}
+.length10, .vocabulary10, .volume57, .effort225, .effort223 { background-color: rgba(57, 255, 0, 0.75);}
+.volume31, .cc_function4, .effort123, .effort121 { background-color: rgba(31, 255, 0, 0.75);}
+.effort31, .effort34 { background-color: rgba(8, 255, 0, 0.75);}
+.volume24, .effort92 { background-color: rgba(23, 255, 0, 0.75);}
+.effort36 { background-color: rgba(9, 255, 0, 0.75);}
+.cc_function8 { background-color: rgba(71, 255, 0, 0.75);}
+.h215, .length29, .vocabulary29, .difficulty15, .N215, .N115 { background-color: rgba(178, 255, 0, 0.75);}
+.N19, .vocabulary17, .h29, .N29, .cc_function11, .volume101, .h19, .difficulty9, .length17, .effort402 { background-color: rgba(102, 255, 0, 0.75);}
+.vocabulary19, .difficulty10, .h110, .N110, .N210, .h210, .length19 { background-color: rgba(115, 255, 0, 0.75);}
+.volume123 { background-color: rgba(124, 255, 0, 0.75);}
+.effort328, .vocabulary14, .length14, .volume82, .effort327 { background-color: rgba(83, 255, 0, 0.75);}
+.effort76, .vocabulary4, .volume20, .length4 { background-color: rgba(19, 255, 0, 0.75);}
+.cc_function7, .effort240, .effort241 { background-color: rgba(61, 255, 0, 0.75);}
+.N217, .h217, .h117, .vocabulary33, .N117 { background-color: rgba(204, 255, 0, 0.75);}
+.volume94, .effort375 { background-color: rgba(95, 255, 0, 0.75);}
+.volume53, .effort210, .effort208, .effort209 { background-color: rgba(53, 255, 0, 0.75);}
+.effort133, .volume34, .effort134 { background-color: rgba(34, 255, 0, 0.75);}
+.volume22, .effort85 { background-color: rgba(21, 255, 0, 0.75);}
+.effort22, .effort21, .effort19, .volume6 { background-color: rgba(5, 255, 0, 0.75);}
+.h211, .N111, .h111, .length21, .vocabulary21, .N211, .volume126, .difficulty11 { background-color: rgba(128, 255, 0, 0.75);}
+.length18, .vocabulary18, .effort426 { background-color: rgba(108, 255, 0, 0.75);}
+.volume68, .effort268 { background-color: rgba(68, 255, 0, 0.75);}
+.effort112, .volume28, .effort111 { background-color: rgba(28, 255, 0, 0.75);}
+.effort416 { background-color: rgba(106, 255, 0, 0.75);}
+.cc_function10, .volume91, .effort363 { background-color: rgba(92, 255, 0, 0.75);}
+.volume43 { background-color: rgba(43, 255, 0, 0.75);}
+.effort115, .effort113, .effort114 { background-color: rgba(29, 255, 0, 0.75);}
+.cc_function13 { background-color: rgba(122, 255, 0, 0.75);}
+.h223, .N123, .N223, .length45, .vocabulary45 { background-color: rgba(255, 230, 0, 0.75);}
+.N116, .N216, .h216, .vocabulary31, .length31 { background-color: rgba(191, 255, 0, 0.75);}
+.N232, .N132, .h232 { background-color: rgba(255, 115, 0, 0.75);}
+.length48 { background-color: rgba(255, 210, 0, 0.75);}
+.volume233 { background-color: rgba(237, 255, 0, 0.75);}
+.effort973, .effort974 { background-color: rgba(248, 255, 0, 0.75);}
+.h219, .N219, .N119, .vocabulary37 { background-color: rgba(230, 255, 0, 0.75);}
+.N222, .N122, .vocabulary43, .h222, .length43 { background-color: rgba(255, 242, 0, 0.75);}
+.vocabulary26, .length26, .effort624 { background-color: rgba(159, 255, 0, 0.75);}
+.length34, .effort826 { background-color: rgba(210, 255, 0, 0.75);}
+.volume159, .effort631 { background-color: rgba(161, 255, 0, 0.75);}
+.effort647 { background-color: rgba(165, 255, 0, 0.75);}
+.vocabulary2, .length2, .effort24, .effort25 { background-color: rgba(6, 255, 0, 0.75);}
+.volume2, .effort6, .effort4, .effort3 { background-color: rgba(1, 255, 0, 0.75);}
+.effort376, .vocabulary16, .length16, .volume95 { background-color: rgba(96, 255, 0, 0.75);}
+.volume46 { background-color: rgba(46, 255, 0, 0.75);}
+.effort89, .volume23, .effort86 { background-color: rgba(22, 255, 0, 0.75);}
+.cc_function22, .volume211 { background-color: rgba(214, 255, 0, 0.75);}
+.h237, .N237 { background-color: rgba(255, 51, 0, 0.75);}
+.N247, .h241, .N264, .length96, .volume541, .effort3805, .N267, .length101, .volume572, .effort5277, .h251, .N277, .length116, .volume698, .effort7383, .effort2993, .N258, .length87, .effort3935, .length90, .volume510, .effort5601, .cc_function71, .h287, .N182, .N2154, .vocabulary104, .length236, .volume1581, .effort23792, .h247, .N274, .length114, .volume670, .effort6335, .N255, .length84, .effort3259, .N246, .effort2239, .N245, .effort2515, .h255, .N276, .length110, .volume652, .effort2704, .N251, .effort3614, .h266, .N149, .N2108, .length157, .volume980, .effort8025, .N145, .N290, .length135, .volume713, .effort5837, .cc_function104, .h2103, .N1119, .N2227, .vocabulary112, .length346, .volume2355, .effort23359, .effort3408, .N243, .h250, .N272, .effort5166, .h244, .N142, .N285, .length127, .volume734, .effort7801, .N146, .N293, .length139, .volume772, .effort8503, .N254, .length82, .effort2839, .N253, .effort2485, .N144, .N287, .length131, .volume800, .effort8860, .length85, .effort2560, .effort3350, .effort2432, .N250, .effort2794, .cc_function54, .h275, .N152, .N2111, .vocabulary85, .length163, .volume1044, .effort7731 { background-color: rgba(255, 0, 0, 0.75);}
+.vocabulary44, .length44 { background-color: rgba(255, 236, 0, 0.75);}
+.length69, .h235, .vocabulary69 { background-color: rgba(255, 76, 0, 0.75);}
+.volume376, .vocabulary61, .N231 { background-color: rgba(255, 128, 0, 0.75);}
+.effort1674, .length68, .volume420 { background-color: rgba(255, 83, 0, 0.75);}
+.cc_function40 { background-color: rgba(255, 112, 0, 0.75);}
+.vocabulary50, .volume307 { background-color: rgba(255, 198, 0, 0.75);}
+.h240, .N140, .length79, .N240 { background-color: rgba(255, 13, 0, 0.75);}
+.N134, .N234 { background-color: rgba(255, 89, 0, 0.75);}
+.vocabulary51, .N226, .h226, .length51, .N126 { background-color: rgba(255, 191, 0, 0.75);}
+.volume12, .effort43 { background-color: rgba(11, 255, 0, 0.75);}
+.effort8, .volume3 { background-color: rgba(2, 255, 0, 0.75);}
+.cc_function29 { background-color: rgba(255, 224, 0, 0.75);}
+.h114, .N214, .length27, .N114, .vocabulary27, .h214 { background-color: rgba(166, 255, 0, 0.75);}
+.N139, .length77, .effort1898 { background-color: rgba(255, 26, 0, 0.75);}
+.vocabulary65, .h233, .length65 { background-color: rgba(255, 102, 0, 0.75);}
+.N121, .h221, .N221, .length41 { background-color: rgba(255, 255, 0, 0.75);}
+.N238, .N138, .h238 { background-color: rgba(255, 38, 0, 0.75);}
+.vocabulary28, .length28 { background-color: rgba(172, 255, 0, 0.75);}
+.length59, .vocabulary59, .N130, .h230, .N230 { background-color: rgba(255, 140, 0, 0.75);}
+.volume283 { background-color: rgba(255, 222, 0, 0.75);}
+.cc_function28 { background-color: rgba(255, 235, 0, 0.75);}
+.N129, .N229 { background-color: rgba(255, 153, 0, 0.75);}
+.volume493 { background-color: rgba(255, 8, 0, 0.75);}
+.cc_function9, .effort324, .volume81 { background-color: rgba(82, 255, 0, 0.75);}
+.volume132, .length22, .effort527, .vocabulary22 { background-color: rgba(134, 255, 0, 0.75);}
+.volume73 { background-color: rgba(73, 255, 0, 0.75);}
+.volume162 { background-color: rgba(164, 255, 0, 0.75);}
+.effort695 { background-color: rgba(177, 255, 0, 0.75);}
+.effort48, .volume13, .effort47 { background-color: rgba(12, 255, 0, 0.75);}
+.volume120, .vocabulary20, .length20 { background-color: rgba(121, 255, 0, 0.75);}
+.effort441, .cc_function12 { background-color: rgba(112, 255, 0, 0.75);}
+.cc_function25 { background-color: rgba(245, 255, 0, 0.75);}
+.N227 { background-color: rgba(255, 178, 0, 0.75);}
+.vocabulary30, .length30 { background-color: rgba(185, 255, 0, 0.75);}
+.length40 { background-color: rgba(249, 255, 0, 0.75);}
+.volume196 { background-color: rgba(199, 255, 0, 0.75);}
+.effort1135 { background-color: rgba(255, 221, 0, 0.75);}
+.h225, .N125, .vocabulary49 { background-color: rgba(255, 204, 0, 0.75);}
+.length55, .N228, .vocabulary55, .h228, .N128 { background-color: rgba(255, 166, 0, 0.75);}
+.volume275 { background-color: rgba(255, 231, 0, 0.75);}
+.effort1424 { background-color: rgba(255, 147, 0, 0.75);}
+.volume118, .effort469 { background-color: rgba(119, 255, 0, 0.75);}
+.volume39, .effort154 { background-color: rgba(39, 255, 0, 0.75);}
+.effort68, .volume18, .effort69 { background-color: rgba(17, 255, 0, 0.75);}
+.volume60, .effort236, .effort237 { background-color: rgba(60, 255, 0, 0.75);}
+.volume49 { background-color: rgba(49, 255, 0, 0.75);}
+.volume89 { background-color: rgba(90, 255, 0, 0.75);}
+.effort262, .effort265 { background-color: rgba(67, 255, 0, 0.75);}
+.volume108, .effort430 { background-color: rgba(109, 255, 0, 0.75);}
+.effort586 { background-color: rgba(149, 255, 0, 0.75);}
+.volume92 { background-color: rgba(93, 255, 0, 0.75);}
+.effort292, .volume74 { background-color: rgba(74, 255, 0, 0.75);}
+.effort164 { background-color: rgba(42, 255, 0, 0.75);}
+.volume36, .effort143 { background-color: rgba(36, 255, 0, 0.75);}
+.volume217 { background-color: rgba(220, 255, 0, 0.75);}
+.effort1061 { background-color: rgba(255, 240, 0, 0.75);}
+.volume59 { background-color: rgba(59, 255, 0, 0.75);}
+.effort97, .volume25, .effort94 { background-color: rgba(24, 255, 0, 0.75);}
+.cc_function19, .volume181, .effort723 { background-color: rgba(184, 255, 0, 0.75);}
+.volume190 { background-color: rgba(193, 255, 0, 0.75);}
+.volume55 { background-color: rgba(55, 255, 0, 0.75);}
+.volume116 { background-color: rgba(117, 255, 0, 0.75);}
+.cc_function27 { background-color: rgba(255, 245, 0, 0.75);}
+.volume474 { background-color: rgba(255, 28, 0, 0.75);}
+.cc_function24 { background-color: rgba(235, 255, 0, 0.75);}
+.volume389 { background-color: rgba(255, 114, 0, 0.75);}
+.effort369, .volume93 { background-color: rgba(94, 255, 0, 0.75);}
+.cc_function23 { background-color: rgba(224, 255, 0, 0.75);}
+.volume368 { background-color: rgba(255, 136, 0, 0.75);}
+.cc_function17 { background-color: rgba(163, 255, 0, 0.75);}
+.volume183 { background-color: rgba(186, 255, 0, 0.75);}
+.effort433 { background-color: rgba(110, 255, 0, 0.75);}
+.cc_function38 { background-color: rgba(255, 133, 0, 0.75);}
+.volume16, .effort61 { background-color: rgba(15, 255, 0, 0.75);}
+.effort743 { background-color: rgba(189, 255, 0, 0.75);}
+.volume99 { background-color: rgba(100, 255, 0, 0.75);}
+.volume58, .effort228 { background-color: rgba(58, 255, 0, 0.75);}
+.cc_function15 { background-color: rgba(143, 255, 0, 0.75);}
+.volume165 { background-color: rgba(167, 255, 0, 0.75);}
+.length76, .vocabulary76 { background-color: rgba(255, 32, 0, 0.75);}
+.volume412 { background-color: rgba(255, 91, 0, 0.75);}
+.volume136 { background-color: rgba(138, 255, 0, 0.75);}
+.effort1209 { background-color: rgba(255, 202, 0, 0.75);}
+.effort175, .volume44 { background-color: rgba(44, 255, 0, 0.75);}
+.cc_function42 { background-color: rgba(255, 92, 0, 0.75);}
+.volume66, .effort259 { background-color: rgba(66, 255, 0, 0.75);}
+.volume65 { background-color: rgba(65, 255, 0, 0.75);}
+.effort206, .effort204 { background-color: rgba(52, 255, 0, 0.75);}
+.volume72 { background-color: rgba(72, 255, 0, 0.75);}
+.volume85 { background-color: rgba(86, 255, 0, 0.75);}
+.effort73, .volume19, .effort72 { background-color: rgba(18, 255, 0, 0.75);}
+.volume153 { background-color: rgba(155, 255, 0, 0.75);}
+.effort915 { background-color: rgba(233, 255, 0, 0.75);}
+.N236 { background-color: rgba(255, 64, 0, 0.75);}
+.volume247 { background-color: rgba(251, 255, 0, 0.75);}
+.effort514 { background-color: rgba(131, 255, 0, 0.75);}
+.effort313, .volume79 { background-color: rgba(80, 255, 0, 0.75);}
+.volume96 { background-color: rgba(97, 255, 0, 0.75);}
+.effort443, .volume112 { background-color: rgba(113, 255, 0, 0.75);}
+.effort318, .volume80 { background-color: rgba(81, 255, 0, 0.75);}
+.volume125 { background-color: rgba(126, 255, 0, 0.75);}
+.effort221 { background-color: rgba(56, 255, 0, 0.75);}
+.effort213 { background-color: rgba(54, 255, 0, 0.75);}
+.volume50, .effort196, .effort197 { background-color: rgba(50, 255, 0, 0.75);}
+.volume142 { background-color: rgba(144, 255, 0, 0.75);}
+.effort710, .effort712 { background-color: rgba(181, 255, 0, 0.75);}
+.vocabulary46, .volume282 { background-color: rgba(255, 223, 0, 0.75);}
+.volume425 { background-color: rgba(255, 78, 0, 0.75);}
+.volume309 { background-color: rgba(255, 196, 0, 0.75);}
+.effort304 { background-color: rgba(77, 255, 0, 0.75);}
+.cc_function18 { background-color: rgba(173, 255, 0, 0.75);}
+.length56 { background-color: rgba(255, 159, 0, 0.75);}
+.effort1672 { background-color: rgba(255, 84, 0, 0.75);}
+.volume69, .effort271 { background-color: rgba(69, 255, 0, 0.75);}
+.vocabulary47, .length47, .h224 { background-color: rgba(255, 217, 0, 0.75);}
+.volume220, .vocabulary36, .length36 { background-color: rgba(223, 255, 0, 0.75);}
+.volume433 { background-color: rgba(255, 69, 0, 0.75);}
+.volume477 { background-color: rgba(255, 24, 0, 0.75);}
+.volume205 { background-color: rgba(208, 255, 0, 0.75);}
+.effort1107 { background-color: rgba(255, 228, 0, 0.75);}
+.effort312, .volume78 { background-color: rgba(79, 255, 0, 0.75);}
+.length42, .vocabulary42 { background-color: rgba(255, 249, 0, 0.75);}
+.volume197 { background-color: rgba(200, 255, 0, 0.75);}
+.effort658 { background-color: rgba(168, 255, 0, 0.75);}
+.volume230 { background-color: rgba(234, 255, 0, 0.75);}
+.effort1299 { background-color: rgba(255, 179, 0, 0.75);}
+.cc_function20 { background-color: rgba(194, 255, 0, 0.75);}
+.volume434 { background-color: rgba(255, 68, 0, 0.75);}
+.volume102 { background-color: rgba(103, 255, 0, 0.75);}
+.volume83 { background-color: rgba(84, 255, 0, 0.75);}
+.effort1362, .cc_function35 { background-color: rgba(255, 163, 0, 0.75);}
+.volume122, .effort484 { background-color: rgba(123, 255, 0, 0.75);}
+.effort510 { background-color: rgba(130, 255, 0, 0.75);}
+.volume48 { background-color: rgba(48, 255, 0, 0.75);}
+.effort1093 { background-color: rgba(255, 232, 0, 0.75);}
+.volume127 { background-color: rgba(129, 255, 0, 0.75);}
+.length60 { background-color: rgba(255, 134, 0, 0.75);}
+.volume297 { background-color: rgba(255, 208, 0, 0.75);}
+.effort359 { background-color: rgba(91, 255, 0, 0.75);}
+.volume158 { background-color: rgba(160, 255, 0, 0.75);}
+.effort409 { background-color: rgba(104, 255, 0, 0.75);}
+.volume409 { background-color: rgba(255, 94, 0, 0.75);}
+.volume192 { background-color: rgba(195, 255, 0, 0.75);}
+.effort833 { background-color: rgba(212, 255, 0, 0.75);}
+.effort886 { background-color: rgba(226, 255, 0, 0.75);}
+.volume98 { background-color: rgba(99, 255, 0, 0.75);}
+.effort457 { background-color: rgba(116, 255, 0, 0.75);}
+.effort146, .effort148, .effort145 { background-color: rgba(37, 255, 0, 0.75);}
+.volume199 { background-color: rgba(202, 255, 0, 0.75);}
+.effort798 { background-color: rgba(203, 255, 0, 0.75);}
+.volume84 { background-color: rgba(85, 255, 0, 0.75);}
+.length52 { background-color: rgba(255, 185, 0, 0.75);}
+.volume252 { background-color: rgba(255, 254, 0, 0.75);}
+.effort894, .volume225 { background-color: rgba(228, 255, 0, 0.75);}
+.volume62 { background-color: rgba(62, 255, 0, 0.75);}
+.volume187 { background-color: rgba(190, 255, 0, 0.75);}
+.effort1407, .effort1408 { background-color: rgba(255, 151, 0, 0.75);}
+.effort184 { background-color: rgba(47, 255, 0, 0.75);}
+.length54 { background-color: rgba(255, 172, 0, 0.75);}
+.volume256 { background-color: rgba(255, 250, 0, 0.75);}
+.volume33, .effort129 { background-color: rgba(33, 255, 0, 0.75);}
+.volume30 { background-color: rgba(30, 255, 0, 0.75);}
+.volume253 { background-color: rgba(255, 253, 0, 0.75);}
+.effort419 { background-color: rgba(107, 255, 0, 0.75);}
+.effort1049 { background-color: rgba(255, 243, 0, 0.75);}
+.effort99 { background-color: rgba(25, 255, 0, 0.75);}

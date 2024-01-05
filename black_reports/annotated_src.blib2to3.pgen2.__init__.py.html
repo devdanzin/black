@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+    <title>Annotated source for src/blib2to3/pgen2/__init__.py</title>
+    <link rel="stylesheet" href="annotated.css" type="text/css">
+    <style>
+        button {
+            display: inline;
+        }
+
+        .halstead, .raw {
+            display: none;
+        }
+
+        .halstead_span, .raw_span {
+            display: none;
+        }
+
+        .toggle {
+            position: fixed;
+        }
+    </style>
+    <script src="annotated.js"></script>
+</head>
+<body onload="select_metric('cc_function', false);">
+    <div  class="toggle">
+        <button onclick="toggle()">Toggle</button>
+        <button id="h1" title="Unique Operands" class="halstead" onclick="select_metric('h1', false)">h1</button>
+        <button id="h2" title="Unique Operators" class="halstead" onclick="select_metric('h2', false)">h2</button>
+        <button id="N1" title="Number of Operands" class="halstead" onclick="select_metric('N1', false)">N1</button>
+        <button id="N2" title="Number of Operators" class="halstead" onclick="select_metric('N2', false)">N2</button>
+        <button id="vocabulary" title="Unique vocabulary (h1 + h2)" class="halstead" onclick="select_metric('vocabulary', false)">vocabulary</button>
+        <button id="length" title="Length of application" class="halstead" onclick="select_metric('length', false)">length</button>
+        <button id="volume" title="Code volume" class="halstead" onclick="select_metric('volume', false)">volume</button>
+        <button id="effort" title="Effort" class="halstead" onclick="select_metric('effort', false)">effort</button>
+        <button id="difficulty" title="Difficulty" class="halstead" onclick="select_metric('difficulty', false)">difficulty</button>
+        <button id="All" title="Display all Halstead metrics" class="halstead" onclick="select_metric('difficulty', true)">All</button>
+        <button id="loc" title="Lines of Code" class="raw" onclick="select_metric('loc', false)">LOC</button>
+        <button id="lloc" title="L Lines of Code" class="raw" onclick="select_metric('lloc', false)">LLOC</button>
+        <button id="sloc" title="S Lines of Code" class="raw" onclick="select_metric('sloc', false)">SLOC</button>
+        <button id="comments" title="Multi-line comments" class="raw" onclick="select_metric('comments', false)">Comments</button>
+        <button id="multi" title="Multi lines" class="raw" onclick="select_metric('multi', false)">Multi</button>
+        <button id="blank" title="Blank lines" class="raw" onclick="select_metric('blank', false)">Blank</button>
+        <button id="single_comments" title="Single comment lines" class="raw" onclick="select_metric('single_comments', false)">Single</button>
+        <button id="All_Raw" title="Display all Raw metrics" class="raw" onclick="select_metric('single_comments', true)">All</button>
+    </div>
+    <div>
+        <div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">src/blib2to3/pgen2/__init__.py</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal"><a href="#line-1">1</a></span>
+<span class="normal"><a href="#line-2">2</a></span>
+<span class="normal"><a href="#line-3">3</a></span>
+<span class="normal"><a href="#line-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><div class="locnone llocnone slocnone commentsnone multinone blanknone single_commentsnone h1none h2none N1none N2none vocabularynone lengthnone volumenone effortnone difficultynone cc_functionnone"><span class="raw_span loc_val locnone">---- </span><span class="raw_span lloc_val llocnone">---- </span><span class="raw_span sloc_val slocnone">---- </span><span class="raw_span comments_val commentsnone">---- </span><span class="raw_span multi_val multinone">---- </span><span class="raw_span blank_val blanknone">---- </span><span class="raw_span single_comments_val single_commentsnone">---- </span><span class="cyclomatic_span cc_function_val cc_functionnone" style="background-color: #ffffff;">-- -- </span><span class="halstead_span h1_val h1none">--- </span><span class="halstead_span h2_val h2none">--- </span><span class="halstead_span N1_val N1none">--- </span><span class="halstead_span N2_val N2none">--- </span><span class="halstead_span vocabulary_val vocabularynone">--- </span><span class="halstead_span length_val lengthnone">--- </span><span class="halstead_span volume_val volumenone">------- </span><span class="halstead_span effort_val effortnone">------- </span><span class="halstead_span difficulty_val difficultynone">------- </span>| <a id="line-1" name="line-1"></a><span class="c1"># Copyright 2004-2005 Elemental Security, Inc. All Rights Reserved.</span>
+</div><div class="locnone llocnone slocnone commentsnone multinone blanknone single_commentsnone h1none h2none N1none N2none vocabularynone lengthnone volumenone effortnone difficultynone cc_functionnone" style="background-color: #ffffff; width: 100%;"><span class="raw_span loc_val locnone">---- </span><span class="raw_span lloc_val llocnone">---- </span><span class="raw_span sloc_val slocnone">---- </span><span class="raw_span comments_val commentsnone">---- </span><span class="raw_span multi_val multinone">---- </span><span class="raw_span blank_val blanknone">---- </span><span class="raw_span single_comments_val single_commentsnone">---- </span><span class="cyclomatic_span cc_function_val cc_functionnone" style="background-color: #ffffff;">-- -- </span><span class="halstead_span h1_val h1none">--- </span><span class="halstead_span h2_val h2none">--- </span><span class="halstead_span N1_val N1none">--- </span><span class="halstead_span N2_val N2none">--- </span><span class="halstead_span vocabulary_val vocabularynone">--- </span><span class="halstead_span length_val lengthnone">--- </span><span class="halstead_span volume_val volumenone">------- </span><span class="halstead_span effort_val effortnone">------- </span><span class="halstead_span difficulty_val difficultynone">------- </span>| <a id="line-2" name="line-2"></a><span class="c1"># Licensed to PSF under a Contributor Agreement.</span>
+</div><div class="locnone llocnone slocnone commentsnone multinone blanknone single_commentsnone h1none h2none N1none N2none vocabularynone lengthnone volumenone effortnone difficultynone cc_functionnone" style="background-color: #ffffff; width: 100%;"><span class="raw_span loc_val locnone">---- </span><span class="raw_span lloc_val llocnone">---- </span><span class="raw_span sloc_val slocnone">---- </span><span class="raw_span comments_val commentsnone">---- </span><span class="raw_span multi_val multinone">---- </span><span class="raw_span blank_val blanknone">---- </span><span class="raw_span single_comments_val single_commentsnone">---- </span><span class="cyclomatic_span cc_function_val cc_functionnone" style="background-color: #ffffff;">-- -- </span><span class="halstead_span h1_val h1none">--- </span><span class="halstead_span h2_val h2none">--- </span><span class="halstead_span N1_val N1none">--- </span><span class="halstead_span N2_val N2none">--- </span><span class="halstead_span vocabulary_val vocabularynone">--- </span><span class="halstead_span length_val lengthnone">--- </span><span class="halstead_span volume_val volumenone">------- </span><span class="halstead_span effort_val effortnone">------- </span><span class="halstead_span difficulty_val difficultynone">------- </span>| <a id="line-3" name="line-3"></a>
+</div><div class="locnone llocnone slocnone commentsnone multinone blanknone single_commentsnone h1none h2none N1none N2none vocabularynone lengthnone volumenone effortnone difficultynone cc_functionnone" style="background-color: #ffffff; width: 100%;"><span class="raw_span loc_val locnone">---- </span><span class="raw_span lloc_val llocnone">---- </span><span class="raw_span sloc_val slocnone">---- </span><span class="raw_span comments_val commentsnone">---- </span><span class="raw_span multi_val multinone">---- </span><span class="raw_span blank_val blanknone">---- </span><span class="raw_span single_comments_val single_commentsnone">---- </span><span class="cyclomatic_span cc_function_val cc_functionnone" style="background-color: #ffffff;">-- -- </span><span class="halstead_span h1_val h1none">--- </span><span class="halstead_span h2_val h2none">--- </span><span class="halstead_span N1_val N1none">--- </span><span class="halstead_span N2_val N2none">--- </span><span class="halstead_span vocabulary_val vocabularynone">--- </span><span class="halstead_span length_val lengthnone">--- </span><span class="halstead_span volume_val volumenone">------- </span><span class="halstead_span effort_val effortnone">------- </span><span class="halstead_span difficulty_val difficultynone">------- </span>| <a id="line-4" name="line-4"></a><span class="sd">&quot;&quot;&quot;The pgen2 package.&quot;&quot;&quot;</span>
+</div></pre></div></td></tr></table></div>
+
+    </div>
+</body>
+</html>

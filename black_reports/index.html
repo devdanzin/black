@@ -1,0 +1,1011 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    body {
+      font-family: sans-serif;
+    }
+
+    a:hover {
+	    text-decoration: none;
+    }
+
+    tbody > tr > th {
+      text-align: left;
+      font-weight: bold;
+      padding: 10px;
+      position: sticky;
+      left: 0;
+      z-index: 1;
+      color: inherit;
+      background-color: inherit;
+    }
+
+    thead > tr > th {
+      background-color: #ddd;
+      position: sticky;
+      top: 0;
+    }
+
+    thead > tr > th:first-child {
+      left: 0;
+      background-color: #ddd;
+      text-align: center;
+      font-weight: bold;
+      padding: 10px;
+      position: sticky;
+      top: 0;
+      z-index: 2;
+    }
+
+    tr:nth-child(even) {
+      background-color: #eee;
+    }
+
+    tr:nth-child(odd) {
+      background-color: #fff;
+    }
+
+    td {
+      text-align: center;
+    }
+  </style>
+  <title>Wily Reports</title>
+</head>
+<body>
+<table>
+    <thead>
+        <tr>
+            <th><h3>Filename</h3></th>
+            <th><h3>Report</h3></th>
+            <th><h3 title="Cyclomatic Complexity">complexity</h3></th>
+            <th><h3 title="Unique Operands">h1</h3></th>
+            <th><h3 title="Unique Operators">h2</h3></th>
+            <th><h3 title="Number of Operands">N1</h3></th>
+            <th><h3 title="Number of Operators">N2</h3></th>
+            <th><h3 title="Unique vocabulary (h1 + h2)">vocabulary</h3></th>
+            <th><h3 title="Length of application">length</h3></th>
+            <th><h3 title="Code volume">volume</h3></th>
+            <th><h3 title="Difficulty">difficulty</h3></th>
+            <th><h3 title="Effort">effort</h3></th>
+            <th><h3 title="Maintainability Index">mi</h3></th>
+            <th><h3 title="Lines of Code">loc</h3></th>
+            <th><h3 title="L Lines of Code">lloc</h3></th>
+            <th><h3 title="S Lines of Code">sloc</h3></th>
+            <th><h3 title="Multi-line comments">comments</h3></th>
+            <th><h3 title="Multi lines">multi</h3></th>
+            <th><h3 title="blank lines">blank</h3></th>
+            <th><h3 title="Single comment lines">single_comments</h3></th>
+        </tr>
+    </thead>
+    <tbody>
+            
+        <tr>
+            <th>global</th>
+            <td></td>
+            <td><a href="global_complexity.html">complexity</a></td>
+            <td><a href="global_h1.html">h1</a></td>
+            <td><a href="global_h2.html">h2</a></td>
+            <td><a href="global_N1.html">N1</a></td>
+            <td><a href="global_N2.html">N2</a></td>
+            <td><a href="global_vocabulary.html">vocabulary</a></td>
+            <td><a href="global_length.html">length</a></td>
+            <td><a href="global_volume.html">volume</a></td>
+            <td><a href="global_difficulty.html">difficulty</a></td>
+            <td><a href="global_effort.html">effort</a></td>
+            <td><a href="global_mi.html">mi</a></td>
+            <td><a href="global_loc.html">loc</a></td>
+            <td><a href="global_lloc.html">lloc</a></td>
+            <td><a href="global_sloc.html">sloc</a></td>
+            <td><a href="global_comments.html">comments</a></td>
+            <td><a href="global_multi.html">multi</a></td>
+            <td><a href="global_blank.html">blank</a></td>
+            <td><a href="global_single_comments.html">single_comments</a></td>
+        </tr>
+        <tr>
+            <th><a href="annotated_src.black.__init__.py.html">src/black/__init__.py</a></th>
+            <td><a href="src.black.__init__.py_report.html">Report</a></td>
+            <td><a href="src.black.__init__.py_complexity.html">complexity</a></td>
+            <td><a href="src.black.__init__.py_h1.html">h1</a></td>
+            <td><a href="src.black.__init__.py_h2.html">h2</a></td>
+            <td><a href="src.black.__init__.py_N1.html">N1</a></td>
+            <td><a href="src.black.__init__.py_N2.html">N2</a></td>
+            <td><a href="src.black.__init__.py_vocabulary.html">vocabulary</a></td>
+            <td><a href="src.black.__init__.py_length.html">length</a></td>
+            <td><a href="src.black.__init__.py_volume.html">volume</a></td>
+            <td><a href="src.black.__init__.py_difficulty.html">difficulty</a></td>
+            <td><a href="src.black.__init__.py_effort.html">effort</a></td>
+            <td><a href="src.black.__init__.py_mi.html">mi</a></td>
+            <td><a href="src.black.__init__.py_loc.html">loc</a></td>
+            <td><a href="src.black.__init__.py_lloc.html">lloc</a></td>
+            <td><a href="src.black.__init__.py_sloc.html">sloc</a></td>
+            <td><a href="src.black.__init__.py_comments.html">comments</a></td>
+            <td><a href="src.black.__init__.py_multi.html">multi</a></td>
+            <td><a href="src.black.__init__.py_blank.html">blank</a></td>
+            <td><a href="src.black.__init__.py_single_comments.html">single_comments</a></td>
+        </tr>
+        <tr>
+            <th><a href="annotated_src.black.__main__.py.html">src/black/__main__.py</a></th>
+            <td>Report</td>
+            <td>complexity</td>
+            <td>h1</td>
+            <td>h2</td>
+            <td>N1</td>
+            <td>N2</td>
+            <td>vocabulary</td>
+            <td>length</td>
+            <td>volume</td>
+            <td>difficulty</td>
+            <td>effort</td>
+            <td>mi</td>
+            <td>loc</td>
+            <td>lloc</td>
+            <td>sloc</td>
+            <td>comments</td>
+            <td>multi</td>
+            <td>blank</td>
+            <td>single_comments</td>
+        </tr>
+        <tr>
+            <th><a href="annotated_src.black._width_table.py.html">src/black/_width_table.py</a></th>
+            <td><a href="src.black._width_table.py_report.html">Report</a></td>
+            <td>complexity</td>
+            <td><a href="src.black._width_table.py_h1.html">h1</a></td>
+            <td><a href="src.black._width_table.py_h2.html">h2</a></td>
+            <td><a href="src.black._width_table.py_N1.html">N1</a></td>
+            <td><a href="src.black._width_table.py_N2.html">N2</a></td>
+            <td><a href="src.black._width_table.py_vocabulary.html">vocabulary</a></td>
+            <td><a href="src.black._width_table.py_length.html">length</a></td>
+            <td><a href="src.black._width_table.py_volume.html">volume</a></td>
+            <td><a href="src.black._width_table.py_difficulty.html">difficulty</a></td>
+            <td><a href="src.black._width_table.py_effort.html">effort</a></td>
+            <td><a href="src.black._width_table.py_mi.html">mi</a></td>
+            <td><a href="src.black._width_table.py_loc.html">loc</a></td>
+            <td><a href="src.black._width_table.py_lloc.html">lloc</a></td>
+            <td><a href="src.black._width_table.py_sloc.html">sloc</a></td>
+            <td>comments</td>
+            <td>multi</td>
+            <td><a href="src.black._width_table.py_blank.html">blank</a></td>
+            <td>single_comments</td>
+        </tr>
+        <tr>
+            <th><a href="annotated_src.black.brackets.py.html">src/black/brackets.py</a></th>
+            <td><a href="src.black.brackets.py_report.html">Report</a></td>
+            <td><a href="src.black.brackets.py_complexity.html">complexity</a></td>
+            <td><a href="src.black.brackets.py_h1.html">h1</a></td>
+            <td><a href="src.black.brackets.py_h2.html">h2</a></td>
+            <td><a href="src.black.brackets.py_N1.html">N1</a></td>
+            <td><a href="src.black.brackets.py_N2.html">N2</a></td>
+            <td><a href="src.black.brackets.py_vocabulary.html">vocabulary</a></td>
+            <td><a href="src.black.brackets.py_length.html">length</a></td>
+            <td><a href="src.black.brackets.py_volume.html">volume</a></td>
+            <td><a href="src.black.brackets.py_difficulty.html">difficulty</a></td>
+            <td><a href="src.black.brackets.py_effort.html">effort</a></td>
+            <td><a href="src.black.brackets.py_mi.html">mi</a></td>
+            <td><a href="src.black.brackets.py_loc.html">loc</a></td>
+            <td><a href="src.black.brackets.py_lloc.html">lloc</a></td>
+            <td><a href="src.black.brackets.py_sloc.html">sloc</a></td>
+            <td><a href="src.black.brackets.py_comments.html">comments</a></td>
+            <td><a href="src.black.brackets.py_multi.html">multi</a></td>
+            <td><a href="src.black.brackets.py_blank.html">blank</a></td>
+            <td><a href="src.black.brackets.py_single_comments.html">single_comments</a></td>
+        </tr>
+        <tr>
+            <th><a href="annotated_src.black.cache.py.html">src/black/cache.py</a></th>
+            <td><a href="src.black.cache.py_report.html">Report</a></td>
+            <td><a href="src.black.cache.py_complexity.html">complexity</a></td>
+            <td><a href="src.black.cache.py_h1.html">h1</a></td>
+            <td><a href="src.black.cache.py_h2.html">h2</a></td>
+            <td><a href="src.black.cache.py_N1.html">N1</a></td>
+            <td><a href="src.black.cache.py_N2.html">N2</a></td>
+            <td><a href="src.black.cache.py_vocabulary.html">vocabulary</a></td>
+            <td><a href="src.black.cache.py_length.html">length</a></td>
+            <td><a href="src.black.cache.py_volume.html">volume</a></td>
+            <td><a href="src.black.cache.py_difficulty.html">difficulty</a></td>
+            <td><a href="src.black.cache.py_effort.html">effort</a></td>
+            <td><a href="src.black.cache.py_mi.html">mi</a></td>
+            <td><a href="src.black.cache.py_loc.html">loc</a></td>
+            <td><a href="src.black.cache.py_lloc.html">lloc</a></td>
+            <td><a href="src.black.cache.py_sloc.html">sloc</a></td>
+            <td><a href="src.black.cache.py_comments.html">comments</a></td>
+            <td><a href="src.black.cache.py_multi.html">multi</a></td>
+            <td><a href="src.black.cache.py_blank.html">blank</a></td>
+            <td><a href="src.black.cache.py_single_comments.html">single_comments</a></td>
+        </tr>
+        <tr>
+            <th><a href="annotated_src.black.comments.py.html">src/black/comments.py</a></th>
+            <td><a href="src.black.comments.py_report.html">Report</a></td>
+            <td><a href="src.black.comments.py_complexity.html">complexity</a></td>
+            <td><a href="src.black.comments.py_h1.html">h1</a></td>
+            <td><a href="src.black.comments.py_h2.html">h2</a></td>
+            <td><a href="src.black.comments.py_N1.html">N1</a></td>
+            <td><a href="src.black.comments.py_N2.html">N2</a></td>
+            <td><a href="src.black.comments.py_vocabulary.html">vocabulary</a></td>
+            <td><a href="src.black.comments.py_length.html">length</a></td>
+            <td><a href="src.black.comments.py_volume.html">volume</a></td>
+            <td><a href="src.black.comments.py_difficulty.html">difficulty</a></td>
+            <td><a href="src.black.comments.py_effort.html">effort</a></td>
+            <td><a href="src.black.comments.py_mi.html">mi</a></td>
+            <td><a href="src.black.comments.py_loc.html">loc</a></td>
+            <td><a href="src.black.comments.py_lloc.html">lloc</a></td>
+            <td><a href="src.black.comments.py_sloc.html">sloc</a></td>
+            <td><a href="src.black.comments.py_comments.html">comments</a></td>
+            <td><a href="src.black.comments.py_multi.html">multi</a></td>
+            <td><a href="src.black.comments.py_blank.html">blank</a></td>
+            <td><a href="src.black.comments.py_single_comments.html">single_comments</a></td>
+        </tr>
+        <tr>
+            <th><a href="annotated_src.black.concurrency.py.html">src/black/concurrency.py</a></th>
+            <td><a href="src.black.concurrency.py_report.html">Report</a></td>
+            <td><a href="src.black.concurrency.py_complexity.html">complexity</a></td>
+            <td><a href="src.black.concurrency.py_h1.html">h1</a></td>
+            <td><a href="src.black.concurrency.py_h2.html">h2</a></td>
+            <td><a href="src.black.concurrency.py_N1.html">N1</a></td>
+            <td><a href="src.black.concurrency.py_N2.html">N2</a></td>
+            <td><a href="src.black.concurrency.py_vocabulary.html">vocabulary</a></td>
+            <td><a href="src.black.concurrency.py_length.html">length</a></td>
+            <td><a href="src.black.concurrency.py_volume.html">volume</a></td>
+            <td><a href="src.black.concurrency.py_difficulty.html">difficulty</a></td>
+            <td><a href="src.black.concurrency.py_effort.html">effort</a></td>
+            <td><a href="src.black.concurrency.py_mi.html">mi</a></td>
+            <td><a href="src.black.concurrency.py_loc.html">loc</a></td>
+            <td><a href="src.black.concurrency.py_lloc.html">lloc</a></td>
+            <td><a href="src.black.concurrency.py_sloc.html">sloc</a></td>
+            <td><a href="src.black.concurrency.py_comments.html">comments</a></td>
+            <td><a href="src.black.concurrency.py_multi.html">multi</a></td>
+            <td><a href="src.black.concurrency.py_blank.html">blank</a></td>
+            <td><a href="src.black.concurrency.py_single_comments.html">single_comments</a></td>
+        </tr>
+        <tr>
+            <th><a href="annotated_src.black.const.py.html">src/black/const.py</a></th>
+            <td>Report</td>
+            <td>complexity</td>
+            <td>h1</td>
+            <td>h2</td>
+            <td>N1</td>
+            <td>N2</td>
+            <td>vocabulary</td>
+            <td>length</td>
+            <td>volume</td>
+            <td>difficulty</td>
+            <td>effort</td>
+            <td>mi</td>
+            <td>loc</td>
+            <td>lloc</td>
+            <td>sloc</td>
+            <td>comments</td>
+            <td>multi</td>
+            <td>blank</td>
+            <td>single_comments</td>
+        </tr>
+        <tr>
+            <th><a href="annotated_src.black.debug.py.html">src/black/debug.py</a></th>
+            <td><a href="src.black.debug.py_report.html">Report</a></td>
+            <td><a href="src.black.debug.py_complexity.html">complexity</a></td>
+            <td>h1</td>
+            <td>h2</td>
+            <td>N1</td>
+            <td>N2</td>
+            <td>vocabulary</td>
+            <td>length</td>
+            <td>volume</td>
+            <td>difficulty</td>
+            <td>effort</td>
+            <td><a href="src.black.debug.py_mi.html">mi</a></td>
+            <td><a href="src.black.debug.py_loc.html">loc</a></td>
+            <td><a href="src.black.debug.py_lloc.html">lloc</a></td>
+            <td><a href="src.black.debug.py_sloc.html">sloc</a></td>
+            <td>comments</td>
+            <td>multi</td>
+            <td><a href="src.black.debug.py_blank.html">blank</a></td>
+            <td>single_comments</td>
+        </tr>
+        <tr>
+            <th><a href="annotated_src.black.files.py.html">src/black/files.py</a></th>
+            <td><a href="src.black.files.py_report.html">Report</a></td>
+            <td><a href="src.black.files.py_complexity.html">complexity</a></td>
+            <td><a href="src.black.files.py_h1.html">h1</a></td>
+            <td><a href="src.black.files.py_h2.html">h2</a></td>
+            <td><a href="src.black.files.py_N1.html">N1</a></td>
+            <td><a href="src.black.files.py_N2.html">N2</a></td>
+            <td><a href="src.black.files.py_vocabulary.html">vocabulary</a></td>
+            <td><a href="src.black.files.py_length.html">length</a></td>
+            <td><a href="src.black.files.py_volume.html">volume</a></td>
+            <td><a href="src.black.files.py_difficulty.html">difficulty</a></td>
+            <td><a href="src.black.files.py_effort.html">effort</a></td>
+            <td><a href="src.black.files.py_mi.html">mi</a></td>
+            <td><a href="src.black.files.py_loc.html">loc</a></td>
+            <td><a href="src.black.files.py_lloc.html">lloc</a></td>
+            <td><a href="src.black.files.py_sloc.html">sloc</a></td>
+            <td><a href="src.black.files.py_comments.html">comments</a></td>
+            <td><a href="src.black.files.py_multi.html">multi</a></td>
+            <td><a href="src.black.files.py_blank.html">blank</a></td>
+            <td><a href="src.black.files.py_single_comments.html">single_comments</a></td>
+        </tr>
+        <tr>
+            <th><a href="annotated_src.black.handle_ipynb_magics.py.html">src/black/handle_ipynb_magics.py</a></th>
+            <td><a href="src.black.handle_ipynb_magics.py_report.html">Report</a></td>
+            <td><a href="src.black.handle_ipynb_magics.py_complexity.html">complexity</a></td>
+            <td><a href="src.black.handle_ipynb_magics.py_h1.html">h1</a></td>
+            <td><a href="src.black.handle_ipynb_magics.py_h2.html">h2</a></td>
+            <td><a href="src.black.handle_ipynb_magics.py_N1.html">N1</a></td>
+            <td><a href="src.black.handle_ipynb_magics.py_N2.html">N2</a></td>
+            <td><a href="src.black.handle_ipynb_magics.py_vocabulary.html">vocabulary</a></td>
+            <td><a href="src.black.handle_ipynb_magics.py_length.html">length</a></td>
+            <td><a href="src.black.handle_ipynb_magics.py_volume.html">volume</a></td>
+            <td><a href="src.black.handle_ipynb_magics.py_difficulty.html">difficulty</a></td>
+            <td><a href="src.black.handle_ipynb_magics.py_effort.html">effort</a></td>
+            <td><a href="src.black.handle_ipynb_magics.py_mi.html">mi</a></td>
+            <td><a href="src.black.handle_ipynb_magics.py_loc.html">loc</a></td>
+            <td><a href="src.black.handle_ipynb_magics.py_lloc.html">lloc</a></td>
+            <td><a href="src.black.handle_ipynb_magics.py_sloc.html">sloc</a></td>
+            <td><a href="src.black.handle_ipynb_magics.py_comments.html">comments</a></td>
+            <td><a href="src.black.handle_ipynb_magics.py_multi.html">multi</a></td>
+            <td><a href="src.black.handle_ipynb_magics.py_blank.html">blank</a></td>
+            <td><a href="src.black.handle_ipynb_magics.py_single_comments.html">single_comments</a></td>
+        </tr>
+        <tr>
+            <th><a href="annotated_src.black.linegen.py.html">src/black/linegen.py</a></th>
+            <td><a href="src.black.linegen.py_report.html">Report</a></td>
+            <td><a href="src.black.linegen.py_complexity.html">complexity</a></td>
+            <td><a href="src.black.linegen.py_h1.html">h1</a></td>
+            <td><a href="src.black.linegen.py_h2.html">h2</a></td>
+            <td><a href="src.black.linegen.py_N1.html">N1</a></td>
+            <td><a href="src.black.linegen.py_N2.html">N2</a></td>
+            <td><a href="src.black.linegen.py_vocabulary.html">vocabulary</a></td>
+            <td><a href="src.black.linegen.py_length.html">length</a></td>
+            <td><a href="src.black.linegen.py_volume.html">volume</a></td>
+            <td><a href="src.black.linegen.py_difficulty.html">difficulty</a></td>
+            <td><a href="src.black.linegen.py_effort.html">effort</a></td>
+            <td><a href="src.black.linegen.py_mi.html">mi</a></td>
+            <td><a href="src.black.linegen.py_loc.html">loc</a></td>
+            <td><a href="src.black.linegen.py_lloc.html">lloc</a></td>
+            <td><a href="src.black.linegen.py_sloc.html">sloc</a></td>
+            <td><a href="src.black.linegen.py_comments.html">comments</a></td>
+            <td><a href="src.black.linegen.py_multi.html">multi</a></td>
+            <td><a href="src.black.linegen.py_blank.html">blank</a></td>
+            <td><a href="src.black.linegen.py_single_comments.html">single_comments</a></td>
+        </tr>
+        <tr>
+            <th><a href="annotated_src.black.lines.py.html">src/black/lines.py</a></th>
+            <td><a href="src.black.lines.py_report.html">Report</a></td>
+            <td><a href="src.black.lines.py_complexity.html">complexity</a></td>
+            <td><a href="src.black.lines.py_h1.html">h1</a></td>
+            <td><a href="src.black.lines.py_h2.html">h2</a></td>
+            <td><a href="src.black.lines.py_N1.html">N1</a></td>
+            <td><a href="src.black.lines.py_N2.html">N2</a></td>
+            <td><a href="src.black.lines.py_vocabulary.html">vocabulary</a></td>
+            <td><a href="src.black.lines.py_length.html">length</a></td>
+            <td><a href="src.black.lines.py_volume.html">volume</a></td>
+            <td><a href="src.black.lines.py_difficulty.html">difficulty</a></td>
+            <td><a href="src.black.lines.py_effort.html">effort</a></td>
+            <td><a href="src.black.lines.py_mi.html">mi</a></td>
+            <td><a href="src.black.lines.py_loc.html">loc</a></td>
+            <td><a href="src.black.lines.py_lloc.html">lloc</a></td>
+            <td><a href="src.black.lines.py_sloc.html">sloc</a></td>
+            <td><a href="src.black.lines.py_comments.html">comments</a></td>
+            <td><a href="src.black.lines.py_multi.html">multi</a></td>
+            <td><a href="src.black.lines.py_blank.html">blank</a></td>
+            <td><a href="src.black.lines.py_single_comments.html">single_comments</a></td>
+        </tr>
+        <tr>
+            <th><a href="annotated_src.black.mode.py.html">src/black/mode.py</a></th>
+            <td><a href="src.black.mode.py_report.html">Report</a></td>
+            <td><a href="src.black.mode.py_complexity.html">complexity</a></td>
+            <td><a href="src.black.mode.py_h1.html">h1</a></td>
+            <td><a href="src.black.mode.py_h2.html">h2</a></td>
+            <td><a href="src.black.mode.py_N1.html">N1</a></td>
+            <td><a href="src.black.mode.py_N2.html">N2</a></td>
+            <td><a href="src.black.mode.py_vocabulary.html">vocabulary</a></td>
+            <td><a href="src.black.mode.py_length.html">length</a></td>
+            <td><a href="src.black.mode.py_volume.html">volume</a></td>
+            <td><a href="src.black.mode.py_difficulty.html">difficulty</a></td>
+            <td><a href="src.black.mode.py_effort.html">effort</a></td>
+            <td><a href="src.black.mode.py_mi.html">mi</a></td>
+            <td><a href="src.black.mode.py_loc.html">loc</a></td>
+            <td><a href="src.black.mode.py_lloc.html">lloc</a></td>
+            <td><a href="src.black.mode.py_sloc.html">sloc</a></td>
+            <td><a href="src.black.mode.py_comments.html">comments</a></td>
+            <td><a href="src.black.mode.py_multi.html">multi</a></td>
+            <td><a href="src.black.mode.py_blank.html">blank</a></td>
+            <td><a href="src.black.mode.py_single_comments.html">single_comments</a></td>
+        </tr>
+        <tr>
+            <th><a href="annotated_src.black.nodes.py.html">src/black/nodes.py</a></th>
+            <td><a href="src.black.nodes.py_report.html">Report</a></td>
+            <td><a href="src.black.nodes.py_complexity.html">complexity</a></td>
+            <td><a href="src.black.nodes.py_h1.html">h1</a></td>
+            <td><a href="src.black.nodes.py_h2.html">h2</a></td>
+            <td><a href="src.black.nodes.py_N1.html">N1</a></td>
+            <td><a href="src.black.nodes.py_N2.html">N2</a></td>
+            <td><a href="src.black.nodes.py_vocabulary.html">vocabulary</a></td>
+            <td><a href="src.black.nodes.py_length.html">length</a></td>
+            <td><a href="src.black.nodes.py_volume.html">volume</a></td>
+            <td><a href="src.black.nodes.py_difficulty.html">difficulty</a></td>
+            <td><a href="src.black.nodes.py_effort.html">effort</a></td>
+            <td><a href="src.black.nodes.py_mi.html">mi</a></td>
+            <td><a href="src.black.nodes.py_loc.html">loc</a></td>
+            <td><a href="src.black.nodes.py_lloc.html">lloc</a></td>
+            <td><a href="src.black.nodes.py_sloc.html">sloc</a></td>
+            <td><a href="src.black.nodes.py_comments.html">comments</a></td>
+            <td><a href="src.black.nodes.py_multi.html">multi</a></td>
+            <td><a href="src.black.nodes.py_blank.html">blank</a></td>
+            <td><a href="src.black.nodes.py_single_comments.html">single_comments</a></td>
+        </tr>
+        <tr>
+            <th><a href="annotated_src.black.numerics.py.html">src/black/numerics.py</a></th>
+            <td><a href="src.black.numerics.py_report.html">Report</a></td>
+            <td><a href="src.black.numerics.py_complexity.html">complexity</a></td>
+            <td><a href="src.black.numerics.py_h1.html">h1</a></td>
+            <td><a href="src.black.numerics.py_h2.html">h2</a></td>
+            <td><a href="src.black.numerics.py_N1.html">N1</a></td>
+            <td><a href="src.black.numerics.py_N2.html">N2</a></td>
+            <td><a href="src.black.numerics.py_vocabulary.html">vocabulary</a></td>
+            <td><a href="src.black.numerics.py_length.html">length</a></td>
+            <td><a href="src.black.numerics.py_volume.html">volume</a></td>
+            <td><a href="src.black.numerics.py_difficulty.html">difficulty</a></td>
+            <td><a href="src.black.numerics.py_effort.html">effort</a></td>
+            <td><a href="src.black.numerics.py_mi.html">mi</a></td>
+            <td><a href="src.black.numerics.py_loc.html">loc</a></td>
+            <td><a href="src.black.numerics.py_lloc.html">lloc</a></td>
+            <td><a href="src.black.numerics.py_sloc.html">sloc</a></td>
+            <td><a href="src.black.numerics.py_comments.html">comments</a></td>
+            <td><a href="src.black.numerics.py_multi.html">multi</a></td>
+            <td><a href="src.black.numerics.py_blank.html">blank</a></td>
+            <td><a href="src.black.numerics.py_single_comments.html">single_comments</a></td>
+        </tr>
+        <tr>
+            <th><a href="annotated_src.black.output.py.html">src/black/output.py</a></th>
+            <td><a href="src.black.output.py_report.html">Report</a></td>
+            <td><a href="src.black.output.py_complexity.html">complexity</a></td>
+            <td>h1</td>
+            <td><a href="src.black.output.py_h2.html">h2</a></td>
+            <td><a href="src.black.output.py_N1.html">N1</a></td>
+            <td><a href="src.black.output.py_N2.html">N2</a></td>
+            <td><a href="src.black.output.py_vocabulary.html">vocabulary</a></td>
+            <td><a href="src.black.output.py_length.html">length</a></td>
+            <td><a href="src.black.output.py_volume.html">volume</a></td>
+            <td><a href="src.black.output.py_difficulty.html">difficulty</a></td>
+            <td><a href="src.black.output.py_effort.html">effort</a></td>
+            <td><a href="src.black.output.py_mi.html">mi</a></td>
+            <td><a href="src.black.output.py_loc.html">loc</a></td>
+            <td><a href="src.black.output.py_lloc.html">lloc</a></td>
+            <td><a href="src.black.output.py_sloc.html">sloc</a></td>
+            <td><a href="src.black.output.py_comments.html">comments</a></td>
+            <td><a href="src.black.output.py_multi.html">multi</a></td>
+            <td><a href="src.black.output.py_blank.html">blank</a></td>
+            <td><a href="src.black.output.py_single_comments.html">single_comments</a></td>
+        </tr>
+        <tr>
+            <th><a href="annotated_src.black.parsing.py.html">src/black/parsing.py</a></th>
+            <td><a href="src.black.parsing.py_report.html">Report</a></td>
+            <td><a href="src.black.parsing.py_complexity.html">complexity</a></td>
+            <td><a href="src.black.parsing.py_h1.html">h1</a></td>
+            <td><a href="src.black.parsing.py_h2.html">h2</a></td>
+            <td><a href="src.black.parsing.py_N1.html">N1</a></td>
+            <td><a href="src.black.parsing.py_N2.html">N2</a></td>
+            <td><a href="src.black.parsing.py_vocabulary.html">vocabulary</a></td>
+            <td><a href="src.black.parsing.py_length.html">length</a></td>
+            <td><a href="src.black.parsing.py_volume.html">volume</a></td>
+            <td><a href="src.black.parsing.py_difficulty.html">difficulty</a></td>
+            <td><a href="src.black.parsing.py_effort.html">effort</a></td>
+            <td><a href="src.black.parsing.py_mi.html">mi</a></td>
+            <td><a href="src.black.parsing.py_loc.html">loc</a></td>
+            <td><a href="src.black.parsing.py_lloc.html">lloc</a></td>
+            <td><a href="src.black.parsing.py_sloc.html">sloc</a></td>
+            <td><a href="src.black.parsing.py_comments.html">comments</a></td>
+            <td>multi</td>
+            <td><a href="src.black.parsing.py_blank.html">blank</a></td>
+            <td><a href="src.black.parsing.py_single_comments.html">single_comments</a></td>
+        </tr>
+        <tr>
+            <th><a href="annotated_src.black.ranges.py.html">src/black/ranges.py</a></th>
+            <td><a href="src.black.ranges.py_report.html">Report</a></td>
+            <td><a href="src.black.ranges.py_complexity.html">complexity</a></td>
+            <td>h1</td>
+            <td><a href="src.black.ranges.py_h2.html">h2</a></td>
+            <td><a href="src.black.ranges.py_N1.html">N1</a></td>
+            <td><a href="src.black.ranges.py_N2.html">N2</a></td>
+            <td><a href="src.black.ranges.py_vocabulary.html">vocabulary</a></td>
+            <td><a href="src.black.ranges.py_length.html">length</a></td>
+            <td><a href="src.black.ranges.py_volume.html">volume</a></td>
+            <td><a href="src.black.ranges.py_difficulty.html">difficulty</a></td>
+            <td><a href="src.black.ranges.py_effort.html">effort</a></td>
+            <td><a href="src.black.ranges.py_mi.html">mi</a></td>
+            <td><a href="src.black.ranges.py_loc.html">loc</a></td>
+            <td>lloc</td>
+            <td><a href="src.black.ranges.py_sloc.html">sloc</a></td>
+            <td>comments</td>
+            <td>multi</td>
+            <td>blank</td>
+            <td>single_comments</td>
+        </tr>
+        <tr>
+            <th><a href="annotated_src.black.report.py.html">src/black/report.py</a></th>
+            <td><a href="src.black.report.py_report.html">Report</a></td>
+            <td><a href="src.black.report.py_complexity.html">complexity</a></td>
+            <td>h1</td>
+            <td>h2</td>
+            <td>N1</td>
+            <td>N2</td>
+            <td>vocabulary</td>
+            <td>length</td>
+            <td>volume</td>
+            <td>difficulty</td>
+            <td>effort</td>
+            <td><a href="src.black.report.py_mi.html">mi</a></td>
+            <td><a href="src.black.report.py_loc.html">loc</a></td>
+            <td><a href="src.black.report.py_lloc.html">lloc</a></td>
+            <td><a href="src.black.report.py_sloc.html">sloc</a></td>
+            <td>comments</td>
+            <td>multi</td>
+            <td><a href="src.black.report.py_blank.html">blank</a></td>
+            <td><a href="src.black.report.py_single_comments.html">single_comments</a></td>
+        </tr>
+        <tr>
+            <th><a href="annotated_src.black.rusty.py.html">src/black/rusty.py</a></th>
+            <td><a href="src.black.rusty.py_report.html">Report</a></td>
+            <td>complexity</td>
+            <td>h1</td>
+            <td>h2</td>
+            <td>N1</td>
+            <td>N2</td>
+            <td>vocabulary</td>
+            <td>length</td>
+            <td>volume</td>
+            <td>difficulty</td>
+            <td>effort</td>
+            <td>mi</td>
+            <td><a href="src.black.rusty.py_loc.html">loc</a></td>
+            <td>lloc</td>
+            <td>sloc</td>
+            <td>comments</td>
+            <td>multi</td>
+            <td><a href="src.black.rusty.py_blank.html">blank</a></td>
+            <td>single_comments</td>
+        </tr>
+        <tr>
+            <th><a href="annotated_src.black.strings.py.html">src/black/strings.py</a></th>
+            <td><a href="src.black.strings.py_report.html">Report</a></td>
+            <td><a href="src.black.strings.py_complexity.html">complexity</a></td>
+            <td><a href="src.black.strings.py_h1.html">h1</a></td>
+            <td><a href="src.black.strings.py_h2.html">h2</a></td>
+            <td><a href="src.black.strings.py_N1.html">N1</a></td>
+            <td><a href="src.black.strings.py_N2.html">N2</a></td>
+            <td><a href="src.black.strings.py_vocabulary.html">vocabulary</a></td>
+            <td><a href="src.black.strings.py_length.html">length</a></td>
+            <td><a href="src.black.strings.py_volume.html">volume</a></td>
+            <td><a href="src.black.strings.py_difficulty.html">difficulty</a></td>
+            <td><a href="src.black.strings.py_effort.html">effort</a></td>
+            <td><a href="src.black.strings.py_mi.html">mi</a></td>
+            <td><a href="src.black.strings.py_loc.html">loc</a></td>
+            <td><a href="src.black.strings.py_lloc.html">lloc</a></td>
+            <td><a href="src.black.strings.py_sloc.html">sloc</a></td>
+            <td><a href="src.black.strings.py_comments.html">comments</a></td>
+            <td><a href="src.black.strings.py_multi.html">multi</a></td>
+            <td><a href="src.black.strings.py_blank.html">blank</a></td>
+            <td><a href="src.black.strings.py_single_comments.html">single_comments</a></td>
+        </tr>
+        <tr>
+            <th><a href="annotated_src.black.trans.py.html">src/black/trans.py</a></th>
+            <td><a href="src.black.trans.py_report.html">Report</a></td>
+            <td><a href="src.black.trans.py_complexity.html">complexity</a></td>
+            <td><a href="src.black.trans.py_h1.html">h1</a></td>
+            <td><a href="src.black.trans.py_h2.html">h2</a></td>
+            <td><a href="src.black.trans.py_N1.html">N1</a></td>
+            <td><a href="src.black.trans.py_N2.html">N2</a></td>
+            <td><a href="src.black.trans.py_vocabulary.html">vocabulary</a></td>
+            <td><a href="src.black.trans.py_length.html">length</a></td>
+            <td><a href="src.black.trans.py_volume.html">volume</a></td>
+            <td><a href="src.black.trans.py_difficulty.html">difficulty</a></td>
+            <td><a href="src.black.trans.py_effort.html">effort</a></td>
+            <td><a href="src.black.trans.py_mi.html">mi</a></td>
+            <td><a href="src.black.trans.py_loc.html">loc</a></td>
+            <td><a href="src.black.trans.py_lloc.html">lloc</a></td>
+            <td><a href="src.black.trans.py_sloc.html">sloc</a></td>
+            <td><a href="src.black.trans.py_comments.html">comments</a></td>
+            <td><a href="src.black.trans.py_multi.html">multi</a></td>
+            <td><a href="src.black.trans.py_blank.html">blank</a></td>
+            <td><a href="src.black.trans.py_single_comments.html">single_comments</a></td>
+        </tr>
+        <tr>
+            <th><a href="annotated_src.black_primer.__init__.py.html">src/black_primer/__init__.py</a></th>
+            <td>Report</td>
+            <td>complexity</td>
+            <td>h1</td>
+            <td>h2</td>
+            <td>N1</td>
+            <td>N2</td>
+            <td>vocabulary</td>
+            <td>length</td>
+            <td>volume</td>
+            <td>difficulty</td>
+            <td>effort</td>
+            <td>mi</td>
+            <td>loc</td>
+            <td>lloc</td>
+            <td>sloc</td>
+            <td>comments</td>
+            <td>multi</td>
+            <td>blank</td>
+            <td>single_comments</td>
+        </tr>
+        <tr>
+            <th><a href="annotated_src.black_primer.cli.py.html">src/black_primer/cli.py</a></th>
+            <td>Report</td>
+            <td><a href="src.black_primer.cli.py_complexity.html">complexity</a></td>
+            <td><a href="src.black_primer.cli.py_h1.html">h1</a></td>
+            <td><a href="src.black_primer.cli.py_h2.html">h2</a></td>
+            <td><a href="src.black_primer.cli.py_N1.html">N1</a></td>
+            <td><a href="src.black_primer.cli.py_N2.html">N2</a></td>
+            <td><a href="src.black_primer.cli.py_vocabulary.html">vocabulary</a></td>
+            <td><a href="src.black_primer.cli.py_length.html">length</a></td>
+            <td><a href="src.black_primer.cli.py_volume.html">volume</a></td>
+            <td><a href="src.black_primer.cli.py_difficulty.html">difficulty</a></td>
+            <td><a href="src.black_primer.cli.py_effort.html">effort</a></td>
+            <td><a href="src.black_primer.cli.py_mi.html">mi</a></td>
+            <td><a href="src.black_primer.cli.py_loc.html">loc</a></td>
+            <td><a href="src.black_primer.cli.py_lloc.html">lloc</a></td>
+            <td><a href="src.black_primer.cli.py_sloc.html">sloc</a></td>
+            <td><a href="src.black_primer.cli.py_comments.html">comments</a></td>
+            <td>multi</td>
+            <td><a href="src.black_primer.cli.py_blank.html">blank</a></td>
+            <td><a href="src.black_primer.cli.py_single_comments.html">single_comments</a></td>
+        </tr>
+        <tr>
+            <th><a href="annotated_src.black_primer.lib.py.html">src/black_primer/lib.py</a></th>
+            <td>Report</td>
+            <td><a href="src.black_primer.lib.py_complexity.html">complexity</a></td>
+            <td><a href="src.black_primer.lib.py_h1.html">h1</a></td>
+            <td><a href="src.black_primer.lib.py_h2.html">h2</a></td>
+            <td><a href="src.black_primer.lib.py_N1.html">N1</a></td>
+            <td><a href="src.black_primer.lib.py_N2.html">N2</a></td>
+            <td><a href="src.black_primer.lib.py_vocabulary.html">vocabulary</a></td>
+            <td><a href="src.black_primer.lib.py_length.html">length</a></td>
+            <td><a href="src.black_primer.lib.py_volume.html">volume</a></td>
+            <td><a href="src.black_primer.lib.py_difficulty.html">difficulty</a></td>
+            <td><a href="src.black_primer.lib.py_effort.html">effort</a></td>
+            <td><a href="src.black_primer.lib.py_mi.html">mi</a></td>
+            <td><a href="src.black_primer.lib.py_loc.html">loc</a></td>
+            <td><a href="src.black_primer.lib.py_lloc.html">lloc</a></td>
+            <td><a href="src.black_primer.lib.py_sloc.html">sloc</a></td>
+            <td><a href="src.black_primer.lib.py_comments.html">comments</a></td>
+            <td><a href="src.black_primer.lib.py_multi.html">multi</a></td>
+            <td><a href="src.black_primer.lib.py_blank.html">blank</a></td>
+            <td><a href="src.black_primer.lib.py_single_comments.html">single_comments</a></td>
+        </tr>
+        <tr>
+            <th><a href="annotated_src.blackd.__init__.py.html">src/blackd/__init__.py</a></th>
+            <td><a href="src.blackd.__init__.py_report.html">Report</a></td>
+            <td><a href="src.blackd.__init__.py_complexity.html">complexity</a></td>
+            <td><a href="src.blackd.__init__.py_h1.html">h1</a></td>
+            <td><a href="src.blackd.__init__.py_h2.html">h2</a></td>
+            <td><a href="src.blackd.__init__.py_N1.html">N1</a></td>
+            <td><a href="src.blackd.__init__.py_N2.html">N2</a></td>
+            <td><a href="src.blackd.__init__.py_vocabulary.html">vocabulary</a></td>
+            <td><a href="src.blackd.__init__.py_length.html">length</a></td>
+            <td><a href="src.blackd.__init__.py_volume.html">volume</a></td>
+            <td><a href="src.blackd.__init__.py_difficulty.html">difficulty</a></td>
+            <td><a href="src.blackd.__init__.py_effort.html">effort</a></td>
+            <td><a href="src.blackd.__init__.py_mi.html">mi</a></td>
+            <td><a href="src.blackd.__init__.py_loc.html">loc</a></td>
+            <td><a href="src.blackd.__init__.py_lloc.html">lloc</a></td>
+            <td><a href="src.blackd.__init__.py_sloc.html">sloc</a></td>
+            <td><a href="src.blackd.__init__.py_comments.html">comments</a></td>
+            <td>multi</td>
+            <td><a href="src.blackd.__init__.py_blank.html">blank</a></td>
+            <td><a href="src.blackd.__init__.py_single_comments.html">single_comments</a></td>
+        </tr>
+        <tr>
+            <th><a href="annotated_src.blackd.__main__.py.html">src/blackd/__main__.py</a></th>
+            <td>Report</td>
+            <td>complexity</td>
+            <td>h1</td>
+            <td>h2</td>
+            <td>N1</td>
+            <td>N2</td>
+            <td>vocabulary</td>
+            <td>length</td>
+            <td>volume</td>
+            <td>difficulty</td>
+            <td>effort</td>
+            <td>mi</td>
+            <td>loc</td>
+            <td>lloc</td>
+            <td>sloc</td>
+            <td>comments</td>
+            <td>multi</td>
+            <td>blank</td>
+            <td>single_comments</td>
+        </tr>
+        <tr>
+            <th><a href="annotated_src.blackd.middlewares.py.html">src/blackd/middlewares.py</a></th>
+            <td><a href="src.blackd.middlewares.py_report.html">Report</a></td>
+            <td>complexity</td>
+            <td>h1</td>
+            <td>h2</td>
+            <td>N1</td>
+            <td>N2</td>
+            <td>vocabulary</td>
+            <td>length</td>
+            <td>volume</td>
+            <td>difficulty</td>
+            <td>effort</td>
+            <td><a href="src.blackd.middlewares.py_mi.html">mi</a></td>
+            <td><a href="src.blackd.middlewares.py_loc.html">loc</a></td>
+            <td><a href="src.blackd.middlewares.py_lloc.html">lloc</a></td>
+            <td><a href="src.blackd.middlewares.py_sloc.html">sloc</a></td>
+            <td><a href="src.blackd.middlewares.py_comments.html">comments</a></td>
+            <td>multi</td>
+            <td><a href="src.blackd.middlewares.py_blank.html">blank</a></td>
+            <td><a href="src.blackd.middlewares.py_single_comments.html">single_comments</a></td>
+        </tr>
+        <tr>
+            <th><a href="annotated_src.blib2to3.__init__.py.html">src/blib2to3/__init__.py</a></th>
+            <td>Report</td>
+            <td>complexity</td>
+            <td>h1</td>
+            <td>h2</td>
+            <td>N1</td>
+            <td>N2</td>
+            <td>vocabulary</td>
+            <td>length</td>
+            <td>volume</td>
+            <td>difficulty</td>
+            <td>effort</td>
+            <td>mi</td>
+            <td>loc</td>
+            <td>lloc</td>
+            <td>sloc</td>
+            <td>comments</td>
+            <td>multi</td>
+            <td>blank</td>
+            <td>single_comments</td>
+        </tr>
+        <tr>
+            <th><a href="annotated_src.blib2to3.pgen2.__init__.py.html">src/blib2to3/pgen2/__init__.py</a></th>
+            <td>Report</td>
+            <td>complexity</td>
+            <td>h1</td>
+            <td>h2</td>
+            <td>N1</td>
+            <td>N2</td>
+            <td>vocabulary</td>
+            <td>length</td>
+            <td>volume</td>
+            <td>difficulty</td>
+            <td>effort</td>
+            <td>mi</td>
+            <td>loc</td>
+            <td>lloc</td>
+            <td>sloc</td>
+            <td>comments</td>
+            <td>multi</td>
+            <td>blank</td>
+            <td>single_comments</td>
+        </tr>
+        <tr>
+            <th><a href="annotated_src.blib2to3.pgen2.conv.py.html">src/blib2to3/pgen2/conv.py</a></th>
+            <td><a href="src.blib2to3.pgen2.conv.py_report.html">Report</a></td>
+            <td>complexity</td>
+            <td>h1</td>
+            <td>h2</td>
+            <td>N1</td>
+            <td>N2</td>
+            <td>vocabulary</td>
+            <td>length</td>
+            <td>volume</td>
+            <td>difficulty</td>
+            <td>effort</td>
+            <td><a href="src.blib2to3.pgen2.conv.py_mi.html">mi</a></td>
+            <td>loc</td>
+            <td>lloc</td>
+            <td>sloc</td>
+            <td>comments</td>
+            <td>multi</td>
+            <td>blank</td>
+            <td>single_comments</td>
+        </tr>
+        <tr>
+            <th><a href="annotated_src.blib2to3.pgen2.driver.py.html">src/blib2to3/pgen2/driver.py</a></th>
+            <td><a href="src.blib2to3.pgen2.driver.py_report.html">Report</a></td>
+            <td><a href="src.blib2to3.pgen2.driver.py_complexity.html">complexity</a></td>
+            <td>h1</td>
+            <td>h2</td>
+            <td>N1</td>
+            <td>N2</td>
+            <td>vocabulary</td>
+            <td>length</td>
+            <td>volume</td>
+            <td>difficulty</td>
+            <td>effort</td>
+            <td><a href="src.blib2to3.pgen2.driver.py_mi.html">mi</a></td>
+            <td><a href="src.blib2to3.pgen2.driver.py_loc.html">loc</a></td>
+            <td><a href="src.blib2to3.pgen2.driver.py_lloc.html">lloc</a></td>
+            <td><a href="src.blib2to3.pgen2.driver.py_sloc.html">sloc</a></td>
+            <td><a href="src.blib2to3.pgen2.driver.py_comments.html">comments</a></td>
+            <td>multi</td>
+            <td><a href="src.blib2to3.pgen2.driver.py_blank.html">blank</a></td>
+            <td><a href="src.blib2to3.pgen2.driver.py_single_comments.html">single_comments</a></td>
+        </tr>
+        <tr>
+            <th><a href="annotated_src.blib2to3.pgen2.grammar.py.html">src/blib2to3/pgen2/grammar.py</a></th>
+            <td>Report</td>
+            <td>complexity</td>
+            <td>h1</td>
+            <td>h2</td>
+            <td>N1</td>
+            <td>N2</td>
+            <td>vocabulary</td>
+            <td>length</td>
+            <td>volume</td>
+            <td>difficulty</td>
+            <td>effort</td>
+            <td>mi</td>
+            <td><a href="src.blib2to3.pgen2.grammar.py_loc.html">loc</a></td>
+            <td><a href="src.blib2to3.pgen2.grammar.py_lloc.html">lloc</a></td>
+            <td><a href="src.blib2to3.pgen2.grammar.py_sloc.html">sloc</a></td>
+            <td>comments</td>
+            <td>multi</td>
+            <td>blank</td>
+            <td>single_comments</td>
+        </tr>
+        <tr>
+            <th><a href="annotated_src.blib2to3.pgen2.literals.py.html">src/blib2to3/pgen2/literals.py</a></th>
+            <td><a href="src.blib2to3.pgen2.literals.py_report.html">Report</a></td>
+            <td>complexity</td>
+            <td>h1</td>
+            <td>h2</td>
+            <td>N1</td>
+            <td>N2</td>
+            <td>vocabulary</td>
+            <td>length</td>
+            <td>volume</td>
+            <td>difficulty</td>
+            <td>effort</td>
+            <td>mi</td>
+            <td><a href="src.blib2to3.pgen2.literals.py_loc.html">loc</a></td>
+            <td>lloc</td>
+            <td>sloc</td>
+            <td>comments</td>
+            <td>multi</td>
+            <td><a href="src.blib2to3.pgen2.literals.py_blank.html">blank</a></td>
+            <td>single_comments</td>
+        </tr>
+        <tr>
+            <th><a href="annotated_src.blib2to3.pgen2.parse.py.html">src/blib2to3/pgen2/parse.py</a></th>
+            <td><a href="src.blib2to3.pgen2.parse.py_report.html">Report</a></td>
+            <td><a href="src.blib2to3.pgen2.parse.py_complexity.html">complexity</a></td>
+            <td><a href="src.blib2to3.pgen2.parse.py_h1.html">h1</a></td>
+            <td><a href="src.blib2to3.pgen2.parse.py_h2.html">h2</a></td>
+            <td><a href="src.blib2to3.pgen2.parse.py_N1.html">N1</a></td>
+            <td><a href="src.blib2to3.pgen2.parse.py_N2.html">N2</a></td>
+            <td><a href="src.blib2to3.pgen2.parse.py_vocabulary.html">vocabulary</a></td>
+            <td><a href="src.blib2to3.pgen2.parse.py_length.html">length</a></td>
+            <td><a href="src.blib2to3.pgen2.parse.py_volume.html">volume</a></td>
+            <td><a href="src.blib2to3.pgen2.parse.py_difficulty.html">difficulty</a></td>
+            <td><a href="src.blib2to3.pgen2.parse.py_effort.html">effort</a></td>
+            <td><a href="src.blib2to3.pgen2.parse.py_mi.html">mi</a></td>
+            <td><a href="src.blib2to3.pgen2.parse.py_loc.html">loc</a></td>
+            <td><a href="src.blib2to3.pgen2.parse.py_lloc.html">lloc</a></td>
+            <td><a href="src.blib2to3.pgen2.parse.py_sloc.html">sloc</a></td>
+            <td><a href="src.blib2to3.pgen2.parse.py_comments.html">comments</a></td>
+            <td><a href="src.blib2to3.pgen2.parse.py_multi.html">multi</a></td>
+            <td><a href="src.blib2to3.pgen2.parse.py_blank.html">blank</a></td>
+            <td><a href="src.blib2to3.pgen2.parse.py_single_comments.html">single_comments</a></td>
+        </tr>
+        <tr>
+            <th><a href="annotated_src.blib2to3.pgen2.pgen.py.html">src/blib2to3/pgen2/pgen.py</a></th>
+            <td><a href="src.blib2to3.pgen2.pgen.py_report.html">Report</a></td>
+            <td><a href="src.blib2to3.pgen2.pgen.py_complexity.html">complexity</a></td>
+            <td>h1</td>
+            <td>h2</td>
+            <td>N1</td>
+            <td>N2</td>
+            <td>vocabulary</td>
+            <td>length</td>
+            <td>volume</td>
+            <td>difficulty</td>
+            <td>effort</td>
+            <td><a href="src.blib2to3.pgen2.pgen.py_mi.html">mi</a></td>
+            <td><a href="src.blib2to3.pgen2.pgen.py_loc.html">loc</a></td>
+            <td><a href="src.blib2to3.pgen2.pgen.py_lloc.html">lloc</a></td>
+            <td><a href="src.blib2to3.pgen2.pgen.py_sloc.html">sloc</a></td>
+            <td><a href="src.blib2to3.pgen2.pgen.py_comments.html">comments</a></td>
+            <td>multi</td>
+            <td><a href="src.blib2to3.pgen2.pgen.py_blank.html">blank</a></td>
+            <td><a href="src.blib2to3.pgen2.pgen.py_single_comments.html">single_comments</a></td>
+        </tr>
+        <tr>
+            <th><a href="annotated_src.blib2to3.pgen2.token.py.html">src/blib2to3/pgen2/token.py</a></th>
+            <td><a href="src.blib2to3.pgen2.token.py_report.html">Report</a></td>
+            <td>complexity</td>
+            <td>h1</td>
+            <td><a href="src.blib2to3.pgen2.token.py_h2.html">h2</a></td>
+            <td><a href="src.blib2to3.pgen2.token.py_N1.html">N1</a></td>
+            <td><a href="src.blib2to3.pgen2.token.py_N2.html">N2</a></td>
+            <td><a href="src.blib2to3.pgen2.token.py_vocabulary.html">vocabulary</a></td>
+            <td><a href="src.blib2to3.pgen2.token.py_length.html">length</a></td>
+            <td><a href="src.blib2to3.pgen2.token.py_volume.html">volume</a></td>
+            <td>difficulty</td>
+            <td><a href="src.blib2to3.pgen2.token.py_effort.html">effort</a></td>
+            <td><a href="src.blib2to3.pgen2.token.py_mi.html">mi</a></td>
+            <td><a href="src.blib2to3.pgen2.token.py_loc.html">loc</a></td>
+            <td><a href="src.blib2to3.pgen2.token.py_lloc.html">lloc</a></td>
+            <td><a href="src.blib2to3.pgen2.token.py_sloc.html">sloc</a></td>
+            <td><a href="src.blib2to3.pgen2.token.py_comments.html">comments</a></td>
+            <td>multi</td>
+            <td><a href="src.blib2to3.pgen2.token.py_blank.html">blank</a></td>
+            <td><a href="src.blib2to3.pgen2.token.py_single_comments.html">single_comments</a></td>
+        </tr>
+        <tr>
+            <th><a href="annotated_src.blib2to3.pgen2.tokenize.py.html">src/blib2to3/pgen2/tokenize.py</a></th>
+            <td><a href="src.blib2to3.pgen2.tokenize.py_report.html">Report</a></td>
+            <td>complexity</td>
+            <td>h1</td>
+            <td><a href="src.blib2to3.pgen2.tokenize.py_h2.html">h2</a></td>
+            <td><a href="src.blib2to3.pgen2.tokenize.py_N1.html">N1</a></td>
+            <td><a href="src.blib2to3.pgen2.tokenize.py_N2.html">N2</a></td>
+            <td><a href="src.blib2to3.pgen2.tokenize.py_vocabulary.html">vocabulary</a></td>
+            <td><a href="src.blib2to3.pgen2.tokenize.py_length.html">length</a></td>
+            <td><a href="src.blib2to3.pgen2.tokenize.py_volume.html">volume</a></td>
+            <td><a href="src.blib2to3.pgen2.tokenize.py_difficulty.html">difficulty</a></td>
+            <td><a href="src.blib2to3.pgen2.tokenize.py_effort.html">effort</a></td>
+            <td><a href="src.blib2to3.pgen2.tokenize.py_mi.html">mi</a></td>
+            <td><a href="src.blib2to3.pgen2.tokenize.py_loc.html">loc</a></td>
+            <td><a href="src.blib2to3.pgen2.tokenize.py_lloc.html">lloc</a></td>
+            <td><a href="src.blib2to3.pgen2.tokenize.py_sloc.html">sloc</a></td>
+            <td>comments</td>
+            <td>multi</td>
+            <td><a href="src.blib2to3.pgen2.tokenize.py_blank.html">blank</a></td>
+            <td>single_comments</td>
+        </tr>
+        <tr>
+            <th><a href="annotated_src.blib2to3.pygram.py.html">src/blib2to3/pygram.py</a></th>
+            <td><a href="src.blib2to3.pygram.py_report.html">Report</a></td>
+            <td>complexity</td>
+            <td><a href="src.blib2to3.pygram.py_h1.html">h1</a></td>
+            <td><a href="src.blib2to3.pygram.py_h2.html">h2</a></td>
+            <td><a href="src.blib2to3.pygram.py_N1.html">N1</a></td>
+            <td><a href="src.blib2to3.pygram.py_N2.html">N2</a></td>
+            <td><a href="src.blib2to3.pygram.py_vocabulary.html">vocabulary</a></td>
+            <td><a href="src.blib2to3.pygram.py_length.html">length</a></td>
+            <td><a href="src.blib2to3.pygram.py_volume.html">volume</a></td>
+            <td><a href="src.blib2to3.pygram.py_difficulty.html">difficulty</a></td>
+            <td><a href="src.blib2to3.pygram.py_effort.html">effort</a></td>
+            <td><a href="src.blib2to3.pygram.py_mi.html">mi</a></td>
+            <td><a href="src.blib2to3.pygram.py_loc.html">loc</a></td>
+            <td><a href="src.blib2to3.pygram.py_lloc.html">lloc</a></td>
+            <td><a href="src.blib2to3.pygram.py_sloc.html">sloc</a></td>
+            <td><a href="src.blib2to3.pygram.py_comments.html">comments</a></td>
+            <td>multi</td>
+            <td><a href="src.blib2to3.pygram.py_blank.html">blank</a></td>
+            <td><a href="src.blib2to3.pygram.py_single_comments.html">single_comments</a></td>
+        </tr>
+        <tr>
+            <th><a href="annotated_src.blib2to3.pytree.py.html">src/blib2to3/pytree.py</a></th>
+            <td><a href="src.blib2to3.pytree.py_report.html">Report</a></td>
+            <td><a href="src.blib2to3.pytree.py_complexity.html">complexity</a></td>
+            <td>h1</td>
+            <td>h2</td>
+            <td>N1</td>
+            <td>N2</td>
+            <td>vocabulary</td>
+            <td>length</td>
+            <td>volume</td>
+            <td>difficulty</td>
+            <td>effort</td>
+            <td><a href="src.blib2to3.pytree.py_mi.html">mi</a></td>
+            <td><a href="src.blib2to3.pytree.py_loc.html">loc</a></td>
+            <td><a href="src.blib2to3.pytree.py_lloc.html">lloc</a></td>
+            <td><a href="src.blib2to3.pytree.py_sloc.html">sloc</a></td>
+            <td><a href="src.blib2to3.pytree.py_comments.html">comments</a></td>
+            <td>multi</td>
+            <td><a href="src.blib2to3.pytree.py_blank.html">blank</a></td>
+            <td><a href="src.blib2to3.pytree.py_single_comments.html">single_comments</a></td>
+        </tr>
+    </tbody>
+</table>
+</body>
+</html>
