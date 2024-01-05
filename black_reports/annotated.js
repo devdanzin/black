@@ -5,6 +5,7 @@ let first_toggle = true;
 let last_shown_halstead = "effort";
 let last_shown_raw = "loc";
 
+
 /**
  * Toggles visibility of metric spans and buttons, displaying last shown metric.
  */
@@ -17,14 +18,9 @@ function toggle() {
     } else if ("raw" === disp) {
         disp = "cyclomatic";
     }
-
+    document.getElementsByTagName("body")[0].style.display = "none";
     // Toggle element visibility
-    toggle_elements("raw", false);
-    toggle_elements("raw_span", false);
-    toggle_elements("cyclomatic", true);
-    toggle_elements("cyclomatic_span", false);
-    toggle_elements("halstead", false);
-    toggle_elements("halstead_span", false);
+    toggle_elements();
 
     // Pick a Halstead metric the first time we toggle to them
     if (first_toggle) {
@@ -40,26 +36,21 @@ function toggle() {
     } else if ("raw" === disp) {
         select_metric(last_shown_raw, false);
     }
+    document.getElementsByTagName("body")[0].style.display = "inline";
 }
 
 /**
  * Toggles visibility of elements matching classname, allowing to choose block or inline.
- * @param {string} classname
- * @param {boolean} block
  */
-function toggle_elements(classname, block) {
-    let style = "inline";
-    if (block === true) {
-        style = "block";
-    }
-    let display_name = classname.split("_")[0];
-    let spans = document.getElementsByClassName(classname);
-    for (let si in spans) {
-        if (spans[si].style)
-            {
-              spans[si].style.display =
-                display_name === disp ? style : "none";
+function toggle_elements() {
+    let display_names = ["cyclomatic", "halstead", "raw"];
+    for (let di in display_names) {
+        let spans = document.getElementsByClassName(display_names[di] + "_span");
+        for (let si in spans) {
+            if (spans[si].style) {
+                spans[si].style.display = spans[si].className.includes(disp) ? "block" : "none";
             }
+        }
     }
 }
 
@@ -75,16 +66,16 @@ function metric_style_to_code_style(all_classes, name) {
     );
     for (let ci in unique_metric_classes) {
         let color_class = unique_metric_classes[ci];
+        let metric_span_class_name = color_class.replace("_code", "");
+        let metric_span_class = document.querySelector(
+            "." + metric_span_class_name,
+        );
+        let metric_span_style = getComputedStyle(metric_span_class);
         let code_divs = document.getElementsByClassName(color_class);
         for (let hi in code_divs) {
             let code_div = code_divs[hi];
             if (code_div.style) {
-                let metric_span_class_name = color_class.replace("_code", "");
-                let metric_span_class = document.querySelector(
-                    "." + metric_span_class_name,
-                );
                 if (metric_span_class) {
-                    let metric_span_style = getComputedStyle(metric_span_class);
                     code_div.style.backgroundColor =
                         metric_span_style.backgroundColor;
                 }
@@ -151,35 +142,41 @@ let metric_names = cc_names.concat(halstead_names, raw_names);
  * @param {string} name
  */
 function display_or_hide_metrics(name, show_all) {
+    let style = show_all ? "inline" : "none";
     for (let mni in metric_names) {
+        let metric_name = metric_names[mni];
         let spans_to_display_or_hide = document.getElementsByClassName(
-            metric_names[mni] + "_val",
+            metric_name + "_val",
         );
         for (let si in spans_to_display_or_hide) {
+            let span = spans_to_display_or_hide[si];
             if (
-                spans_to_display_or_hide[si].style &&
                 "halstead" === disp &&
-                halstead_names.includes(metric_names[mni])
+                halstead_names.includes(metric_name) &&
+                span.style
             ) {
-                spans_to_display_or_hide[si].style.display = show_all
-                    ? "inline"
-                    : "none";
+                if (span.style.display !== style) {
+                    span.style.display = style;
+                }
             } else if (
-                spans_to_display_or_hide[si].style &&
                 "raw" === disp &&
-                raw_names.includes(metric_names[mni])
+                raw_names.includes(metric_name) &&
+                span.style
             ) {
-                spans_to_display_or_hide[si].style.display = show_all
-                    ? "inline"
-                    : "none";
+                if (span.style.display !== style) {
+                    span.style.display = style;
+                }
             }
         }
     }
     let spans_to_display = document.getElementsByClassName(name + "_val");
     for (let si in spans_to_display) {
-        if (spans_to_display[si].style)
+        let span = spans_to_display[si];
+        if (span.style)
             {
-              spans_to_display[si].style.display = "inline";
+                if (span.style !== "inline") {
+                    span.style.display = "inline";
+                }
             }
     }
 }
@@ -205,19 +202,20 @@ function get_div_classes() {
  * @param {string} name
  */
 function update_buttons(name) {
-    let all_buttons = document.querySelectorAll("button");
+    let all_buttons = document.getElementsByTagName("button");
     for (let bi in all_buttons) {
         let btn = all_buttons[bi];
-        if (btn.id === name) {
-            if (btn.style) {
+        if (btn.style) {
+            btn.style.display =
+                btn.className === disp ? "inline" : "none";
+            if (btn.id === name) {
                 btn.style.borderStyle = "inset";
                 btn.style.backgroundColor = "darkgray";
-            }
-        } else {
-            if (btn.style) {
+            } else {
                 btn.style.borderStyle = "outset";
                 btn.style.backgroundColor = "";
             }
         }
     }
+    all_buttons[0].style.display = "inline";
 }
